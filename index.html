@@ -572,14 +572,13 @@
   </style>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <title>ABC</title>
   <meta name="description" content="Site description">
 
   <!-- Recommended minimum -->
-  <meta property="og:title" content="Site title">
+  <meta property="og:title" content="ABC">
   <meta property="og:description" content="Site description">
   <meta property="og:image" content="img/site-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -595,87 +594,44 @@
       {{c.link('step1', "ABC method")}}
       <a href="#model">ABC Model</a>
       <a href="#emotions">Emotions</a>
-      <a href="#rebt">REBT</a>
       <a href="#about">About</a>
     </nav>
   </header>
-
   <main>
-
-
-
 
     <section id="home"> <!-- HOME -->
 
       <p>
         Welcome. This is a tool for teaching the ABC model for disputing unhelpful thoughts to improve what we feel,
-        think
-        and do in our lives.
+        think and act in our lives.
       </p>
       <p>
-        Click/tap on the highlighted words below to go to the topic.
+
+      <p>
+        <span class="emotable">This tool is not a replacement for professional help and is intended for educational
+          purposes. Please speak to a clinician/therapist for further clarification on how the ABC model is applicable
+          for
+          your situation.
+        </span>
       </p>
-      <p>
-      - Learn the {{c.link('step1', "ABC method")}} for disputing thoughts</p>
-      <p>
-      - Learn about the {{c.link('model', "ABC model")}} </p>
-<p>      - Learn about [[Emotions]]</p>
-<p>   - Commonly encountered [[issues]] </p>
-      - Learn about [[Rational Emotive Behaviour Therapy]] (REBT) which this model is based on
-      - View the [[references|References]] used to create this tool
-
-      ----
-      <span class="emotable">This tool is not a replacement for professional help and is intended for educational purposes. Please speak to a clinician/therapist for further clarification on how the ABC model is applicable for
-        your situation.
-      </span>
-
-<!--
+      <!--
       {{c.link('step1', "Boba")}}
       {{c.et(c.link('step2', "gusidasodk"))}} -->
-
     </section>
 
     {% include "procedure.html" %}
+    {% include "model.html" %}
+    {% include "emotions.html" %}
 
-    <section id="model"> 
-      The <i>ABC model</i> describes how our beliefs in response to a situation largely determine unhelpful thoughts, feelings and behaviours. Click on the parts of the model below to learn more.
-      <span class="assumptions">
-      
+    <section id="about">
 
+      The ABC model presented here is based on Rational Emotive Behaviour Therapy (REBT), which is a member of a larger
+      families of psychotherapies known as Cognitive Behavioural Therapy (CBT).
+
+      See {{c.link('references', "references")}}.
     </section>
 
-
-    <section id="emotions">
-
-      This is a list of unhelpful emotions that we typically focus on in REBT. You can click/tap on each one to read more about how they can negatively affect your thoughts and behaviours.
-      Note that the absence of some of these unhelpful negative emotions is not positive emotion, but an //unhelpful negative emotion//. It would be unrealistic if we felt good about something bad happened to us.      
-      <i>A negative emotion can be helpful if it leads us to take meaningful action to resolve a problem.</i>
-      
-      If you are in distress and are unsure what feelings you are experiencing, it might be helpful to read through the lists of thoughts and behaviours for each feeling to see which ones you are engaged in.
-      
-      You can take a quick [[Emotion Assessment]] to figure out what feelings you might be experiencing.
-
-      <table style="width:100%; border:1px solid white">
-        <tbody>
-        <tr>
-        <td style="text-align: center;">[[Depression]]</td>
-        <td style="text-align: center;">[[Anxiety]]</td>
-        </tr>
-        <tr>
-        <td style="text-align: center;">[[Anger]]</td>
-        <td style="text-align: center;">[[Hurt]]</td>
-        </tr>
-        <tr>
-        <td style="text-align: center;">[[Guilt]]</td>
-        <td style="text-align: center;">[[Shame]]</td>
-        </tr>
-        <tr>
-        <td style="text-align: center;">[[Jealousy]]</td>
-        <td style="text-align: center;">[[Envy]]</td>
-        </tr>
-        </tbody>
-        </table>
-
+    <section id="references">
 
     </section>
 
