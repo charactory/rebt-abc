@@ -28,7 +28,7 @@
       * {
         --textcolor: #dadada;
         --bgcolor: #141414;
-        --highlight: #ffc400;
+        --highlight: #00c4ff;
       }
     }
 
@@ -602,16 +602,15 @@
     <section id="home"> <!-- HOME -->
 
       <p>
-        Welcome. This is a tool for teaching the ABC model for disputing unhelpful thoughts to improve what we feel,
-        think and act in our lives.
+        Welcome. This is a tool for teaching the ABC model for disputing unhelpful thoughts to improve what we feel, think and act in our lives.
       </p>
-      <p>
 
       <p>
-        <span class="emotable">This tool is not a replacement for professional help and is intended for educational
-          purposes. Please speak to a clinician/therapist for further clarification on how the ABC model is applicable
-          for
-          your situation.
+        {{c.link('step1', "Define the Activating Event")}}
+      </p>
+
+      <p>
+        <span class="emotable">This tool is not a replacement for professional help and is intended for educational purposes. Please speak to a clinician/therapist for further clarification on how the ABC model is applicable for your situation.
         </span>
       </p>
       <!--
@@ -623,8 +622,9 @@
     {% include "model.html" %}
     {% include "emotions.html" %}
 
-    <section id="about">
 
+
+    <section id="about">
       The ABC model presented here is based on Rational Emotive Behaviour Therapy (REBT), which is a member of a larger
       families of psychotherapies known as Cognitive Behavioural Therapy (CBT).
 
