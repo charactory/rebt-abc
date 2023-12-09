@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{% import "components.njk" as c %}
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -9,5 +10,7 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
+    {{c.link('boo', "Boba")}}
+    {{c.et(c.link('goo', "gusidasodk"))}}
   </body>
 </html>

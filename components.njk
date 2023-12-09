@@ -1,0 +1,12 @@
+  {% macro link(name, value='', type='text') %}
+  <a href="#{{name}}">{{value}}</a>
+  {% endmacro %}
+
+    {% macro et(value='', type='text') %}
+    <span class="emotable">
+        <tbody style="border:1px solid white">
+{{value}}
+</tbody>
+</table>
+</span>
+  {% endmacro %}
