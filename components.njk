@@ -1,5 +1,16 @@
 {% macro link(name, value='', type='text') %}
-  <a href="#{{name}}">{{value}}</a>
+  <a onClick="document.getElementById('step1').style.display='none';
+               document.getElementById('step2').style.display='none'
+               document.getElementById('step3').style.display='none';
+               document.getElementById('step4').style.display='none';
+               document.getElementById('step5').style.display='none';
+               if ('{{name}}' != 'home'){
+                  document.getElementById('home').style.display='none';
+               } else {
+                  document.getElementById('home').style.display='block';
+               }
+               "
+                href="#{{name}}">{{value}}</a>
 {% endmacro %}
 
 {% macro et(value='', type='text') %}

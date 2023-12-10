@@ -8,7 +8,7 @@
     @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
     .emotable {
-      font-size: 0.8rem
+      font-size: 0.7rem
     }
 
     * {
@@ -91,11 +91,16 @@
     /* ------- General ------- */
 
     section h1 {
-      font-size: 1em;
+      font-size: 1.8em;
       margin: 0 0 1em 0;
     }
 
-    h2,
+    h2 {
+      font-size: 1.3em;
+      font-weight: 600;
+      margin: 1.6em 0 .6em 0;
+    }
+
     h3,
     h4 {
       font-size: 1em;
@@ -568,8 +573,8 @@
 
   <!-- Recommended minimum -->
   <meta property="og:title" content="ABC">
-  <meta property="og:description" content="Site description">
-  <meta property="og:image" content="img/site-image.jpg">
+  <meta property="og:description" content="ABC Method">
+<!--<meta property="og:image" content="img/site-image.jpg">-->
   <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -577,13 +582,12 @@
 
   <header>
     <h1>
-      <a href="#home">ABC</a>
+      {{c.link('home', "ABC")}}
     </h1>
     <nav>
-      {{c.link('step1', "ABC method")}}
-      <a href="#model">ABC Model</a>
-      <a href="#emotions">Emotions</a>
-      <a href="#about">About</a>
+      {{c.link('model', "ABC Model")}}
+      {{c.link('emotions', "Emotions")}}
+      {{c.link('about', "About")}}
     </nav>
   </header>
   <main>
@@ -603,9 +607,6 @@
           for your situation.
         </span>
       </p>
-      <!--
-      {{c.link('step1', "Boba")}}
-      {{c.et(c.link('step2', "gusidasodk"))}} -->
     </section>
 
     {% include "model.html" %}
