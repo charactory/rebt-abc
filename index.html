@@ -574,7 +574,7 @@
   <!-- Recommended minimum -->
   <meta property="og:title" content="ABC">
   <meta property="og:description" content="ABC Method">
-<!--<meta property="og:image" content="img/site-image.jpg">-->
+  <!--<meta property="og:image" content="img/site-image.jpg">-->
   <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -599,7 +599,24 @@
         think and act in our lives.
       </p>
 
-      {% include "procedure.html" %}
+      <p>
+        {{c.link('step1', "1. Define the Activating Event")}}
+      </p>
+      <p>
+        {{c.link('step2', "2. Identify Consequences")}}
+      </p>
+      <p>
+
+        {{c.link('step3', "3. Identify Unhelpful Beliefs")}}
+      </p>
+      <p>
+
+        {{c.link('step4', "4. Dispute Unhelpful Beliefs")}}
+      </p>
+      <p>
+        {{c.link('step5', "5. Devise Helpful Alternative Belief")}}
+      </p>
+
 
       <p>
         <span class="emotable">This tool is not a replacement for professional help and is intended for educational
@@ -608,7 +625,7 @@
         </span>
       </p>
     </section>
-
+    {% include "procedure.html" %}
     {% include "model.html" %}
     {% include "emotions.html" %}
 
