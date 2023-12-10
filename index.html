@@ -8,7 +8,7 @@
     @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
     .emotable {
-      font-size: 0.8rem
+      font-size: 0.7rem
     }
 
     * {
@@ -32,11 +32,11 @@
 
     body {
       font: 1rem/1 Merriweather, serif;
-      line-height: 1.4;
+      line-height: 1.5;
       color: var(--textcolor);
       background: var(--bgcolor);
       position: relative;
-      max-width: 72em;
+      max-width: 68em;
       /* remove this for a full-width layout */
       margin: 0 auto;
       /* centers the layout */
@@ -107,7 +107,7 @@
     }
 
     section h1 {
-      font-size: 1.8em;
+      font-size: 1.5em;
       margin: 0 0 1em 0;
     }
 
@@ -580,12 +580,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <title>ABC</title>
-  <meta name="description" content="Site description">
+  <meta name="description" content="ABC">
 
   <!-- Recommended minimum -->
   <meta property="og:title" content="ABC">
-  <meta property="og:description" content="Site description">
-  <meta property="og:image" content="img/site-image.jpg">
+  <meta property="og:description" content="ABC Method">
+<!--  <meta property="og:image" content="img/site-image.jpg">-->
   <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -596,7 +596,7 @@
       <a href="#home">ABC</a>
     </h1>
     <nav>
-      <a href="#model">ABC Model</a>
+      <a href="#model">Model</a>
       <a href="#emotions">Emotions</a>
       <a href="#about">About</a>
     </nav>
@@ -604,7 +604,6 @@
   <main>
 
     <section id="home"> <!-- HOME -->
-
       <p>
         Welcome. This is a tool for teaching the ABC model for disputing unhelpful thoughts to improve what we feel,
         think and act in our lives.
@@ -631,16 +630,13 @@
       </p>
 
 
-
+      <hr>
       <p>
         <span class="emotable">This tool is not a replacement for professional help and is intended for educational
           purposes. Please speak to a clinician/therapist for further clarification on how the ABC model is applicable
           for your situation.
         </span>
       </p>
-      <!--
-      {{c.link('step1', "Boba")}}
-      {{c.et(c.link('step2', "gusidasodk"))}} -->
     </section>
 
     {% include "procedure.html" %}
