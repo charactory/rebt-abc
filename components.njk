@@ -13,9 +13,9 @@
 {% endmacro %}
 
 {% macro hidestep(name, value='', type='text') %}
-
+<h2>
   <a href="javascript:;" onClick="if (document.getElementById('{{name}}').style.display=='block'){document.getElementById('{{name}}').style.display='none'} else {document.getElementById('{{name}}').style.display='block'};">
     {{value}}
   </a>
-
+</h2>
 {% endmacro %}

@@ -18,17 +18,15 @@
 
       /* Color scheme */
 
-      --textcolor: #121212;
-      --bgcolor: #fff;
-      --highlight: #2749c9;
+      background-color: #151515;
+      color: #ddd;
 
     }
 
     @media (prefers-color-scheme: dark) {
-      * {
-        --textcolor: #dadada;
-        --bgcolor: #141414;
-        --highlight: #00c4ff;
+      body {
+        background-color: #151515;
+        color: #ddd;
       }
     }
 
@@ -38,7 +36,7 @@
       color: var(--textcolor);
       background: var(--bgcolor);
       position: relative;
-      max-width: 72em;
+      max-width: 64em;
       /* remove this for a full-width layout */
       margin: 0 auto;
       /* centers the layout */
@@ -92,15 +90,6 @@
 
     /* ------- General ------- */
 
-    a {
-      text-decoration: none;
-      color: var(--highlight);
-    }
-
-    a:hover {
-      border-bottom: 1px solid;
-    }
-
     section h1 {
       font-size: 1em;
       margin: 0 0 1em 0;
@@ -128,7 +117,7 @@
     }
 
     ul li::marker {
-      content: "\2022   ";
+      content: "\2023   ";
     }
 
     li {
@@ -598,7 +587,7 @@
     </nav>
   </header>
   <main>
-    {% include "procedure.html" %}
+
     <section id="home"> <!-- HOME -->
 
       <p>
@@ -606,28 +595,7 @@
         think and act in our lives.
       </p>
 
-      <p>
-        {{c.hidestep('step1text', 'Define the Activating Event')}}
-
-        <a href="javascript:;" onClick="if (document.getElementById('step1text').style.display=='block'){document.getElementById('step1text').style.display='none'} else {document.getElementById('step1text').style.display='block'}
-        ;">Define the Activating Event</a>
-      </p>
-      <p>
-        {{c.link('step2', "Identify Consequences")}}
-      </p>
-
-      <p>
-        {{c.link('step3', "Identify Unhelpful Beliefs")}}
-      </p>
-
-      <p>
-        {{c.link('step4', "Dispute Unhelpful Beliefs")}}
-      </p>
-
-      <p>
-        {{c.link('step5', "Devise More Helpful Event")}}
-      </p>
-
+      {% include "procedure.html" %}
 
       <p>
         <span class="emotable">This tool is not a replacement for professional help and is intended for educational
@@ -639,7 +607,6 @@
       {{c.link('step1', "Boba")}}
       {{c.et(c.link('step2', "gusidasodk"))}} -->
     </section>
-
 
     {% include "model.html" %}
     {% include "emotions.html" %}
