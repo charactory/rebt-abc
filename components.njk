@@ -1,12 +1,21 @@
-  {% macro link(name, value='', type='text') %}
+{% macro link(name, value='', type='text') %}
   <a href="#{{name}}">{{value}}</a>
-  {% endmacro %}
+{% endmacro %}
 
-    {% macro et(value='', type='text') %}
-    <span class="emotable">
-        <tbody style="border:1px solid white">
-{{value}}
-</tbody>
-</table>
-</span>
-  {% endmacro %}
+{% macro et(value='', type='text') %}
+  <span class="emotable">
+    <table>
+      <tbody style="border:1px solid white">
+        {{value}}
+      </tbody>
+    </table>
+  </span>
+{% endmacro %}
+
+{% macro hidestep(name, value='', type='text') %}
+
+  <a href="javascript:;" onClick="if (document.getElementById('{{name}}').style.display=='block'){document.getElementById('{{name}}').style.display='none'} else {document.getElementById('{{name}}').style.display='block'};">
+    {{value}}
+  </a>
+
+{% endmacro %}

@@ -598,19 +598,41 @@
     </nav>
   </header>
   <main>
-
+    {% include "procedure.html" %}
     <section id="home"> <!-- HOME -->
 
       <p>
-        Welcome. This is a tool for teaching the ABC model for disputing unhelpful thoughts to improve what we feel, think and act in our lives.
+        Welcome. This is a tool for teaching the ABC model for disputing unhelpful thoughts to improve what we feel,
+        think and act in our lives.
       </p>
 
       <p>
-        {{c.link('step1', "Define the Activating Event")}}
+        {{c.hidestep('step1text', 'Define the Activating Event')}}
+
+        <a href="javascript:;" onClick="if (document.getElementById('step1text').style.display=='block'){document.getElementById('step1text').style.display='none'} else {document.getElementById('step1text').style.display='block'}
+        ;">Define the Activating Event</a>
+      </p>
+      <p>
+        {{c.link('step2', "Identify Consequences")}}
       </p>
 
       <p>
-        <span class="emotable">This tool is not a replacement for professional help and is intended for educational purposes. Please speak to a clinician/therapist for further clarification on how the ABC model is applicable for your situation.
+        {{c.link('step3', "Identify Unhelpful Beliefs")}}
+      </p>
+
+      <p>
+        {{c.link('step4', "Dispute Unhelpful Beliefs")}}
+      </p>
+
+      <p>
+        {{c.link('step5', "Devise More Helpful Event")}}
+      </p>
+
+
+      <p>
+        <span class="emotable">This tool is not a replacement for professional help and is intended for educational
+          purposes. Please speak to a clinician/therapist for further clarification on how the ABC model is applicable
+          for your situation.
         </span>
       </p>
       <!--
@@ -618,7 +640,7 @@
       {{c.et(c.link('step2', "gusidasodk"))}} -->
     </section>
 
-    {% include "procedure.html" %}
+
     {% include "model.html" %}
     {% include "emotions.html" %}
 
