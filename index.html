@@ -592,6 +592,11 @@
   </header>
   <main>
 
+    {% include "procedure.html" %}
+    {% include "model.html" %}
+    {% include "emotions.html" %}
+
+
     <section id="home"> <!-- HOME -->
 
       <p>
@@ -616,6 +621,9 @@
       <p>
         {{c.link('step5', "5. Devise Helpful Alternative Belief")}}
       </p>
+      <p>
+        {{c.link('step2', "Define the Activating Event")}}
+      </p>
 
 
       <p>
@@ -625,9 +633,6 @@
         </span>
       </p>
     </section>
-    {% include "procedure.html" %}
-    {% include "model.html" %}
-    {% include "emotions.html" %}
 
 
 
