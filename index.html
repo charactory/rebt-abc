@@ -27,16 +27,16 @@
 
       /* Color scheme */
 
-      --textcolor: #ddd;
-      --bgcolor: #151515;
+      --textcolor: #151515;
+      --bgcolor: #ddd;
       /*--highlight: #2749c9;*/
 
     }
 
     @media (prefers-color-scheme: dark) {
       * {
-        --textcolor: #dadada;
-        --bgcolor: #141414;
+        --textcolor: #ddd;
+        --bgcolor: #151515;
       }
     }
 
@@ -483,12 +483,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>ABC</title>
-  <meta name="description" content="ABC">
+  <title>ABC Model</title>
+  <meta name="description" content="ABC Model">
 
   <!-- Recommended minimum -->
-  <meta property="og:title" content="ABC">
-  <meta property="og:description" content="ABC Method">
+  <meta property="og:title" content="ABC Model">
+  <meta property="og:description" content="ABC Model">
   <!--  <meta property="og:image" content="img/site-image.jpg">-->
   <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -497,11 +497,11 @@
 
   <header>
     <h1>
-      <a href="#home">ABC</a>
+      <a href="#home">ABC Model</a>
     </h1>
     <nav>
-      <a href="#model">Model</a>
       <a href="#emotions">Emotions</a>
+      <a href="#issues">FAQs</a>
       <a href="#about">About</a>
     </nav>
   </header>
@@ -514,28 +514,29 @@
         think and act.
       </p>
       <hr>
+
+      <h3>
       <p>
-      <h2>
-        Steps
-      </h2>
+        {{c.link('model', "Intro: What is the \'ABC Model\'?")}}
       </p>
-      <p>
+    </h3>
+    <p style="margin-top:0.4rem">
         {{c.link('step1', "1. Define the Activating Event")}}
       </p>
 
-      <p>
+      <p style="margin-top:0.2rem">
         {{c.link('step2', "2. Identify Consequences")}}
       </p>
 
-      <p>
+      <p style="margin-top:0.2rem">
         {{c.link('step3', "3. Identify Unhelpful Beliefs")}}
       </p>
 
-      <p>
+      <p style="margin-top:0.2rem">
         {{c.link('step4', "4. Dispute Unhelpful Beliefs")}}
       </p>
 
-      <p>
+      <p style="margin-top:0.2rem">
         {{c.link('step5', "5. Formulate Helpful Alternative Beliefs")}}
       </p>
 
