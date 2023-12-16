@@ -1,16 +1,13 @@
-{% block header %}
+<p><h2>{% block emo_name %}{% endblock %}</h2></p>
+
+<p><h3>Typical activating events associated with emotion</h3></p>
+{% block emo_a %}
 {% endblock %}
 
-{% block emo_desc %}{% endblock %}
+<p><h3>Unhelpful behaviours associated with emotion</h3></p>
+{% block emo_behaviours %}
+{% endblock %}
 
-<p><i>Example beliefs:</i></p>
-{% block emo_example %}{% endblock %}
-
-<span class="emotable">
-  <table style="width:100%">
-    <tbody>
-      {% block emo_rows %}
-      {% endblock %}
-    </tbody>
-  </table>
-</span>
+<p><h3>Subsequent thoughts that typically occur in response to emotion</h3></p>
+{% block emo_thoughts %}
+{% endblock %}
