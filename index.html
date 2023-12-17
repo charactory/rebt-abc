@@ -148,13 +148,14 @@
       margin-bottom: .6em;
     }
 
-    #emotion_table p {
-      font-size: 1rem;
+    #emotion_table p, ul, ol {
+      font-size: 1.1rem;
       line-height: 1.5rem;
       max-width: 60ch;
       /* Limit line-length to 60 characters */
       margin-bottom: .6em;
     }
+    
 
     #emotion_table h3 {
       font-size: 1.3rem;
@@ -171,7 +172,7 @@
       column-rule: 1px solid var(--textcolor);
       background-color: var(--bgcolor);
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 0.2rem;
+      grid-gap: 0.5rem;
     }
 
 
@@ -212,6 +213,7 @@
       background: currentColor;
       opacity: .8;
       margin: 1.5em 0;
+      max-width: 85ch;
     }
 
     abbr {
@@ -555,6 +557,7 @@
     {% include "procedure.html" %}
     {% include "model.html" %}
     {% include "emotions.html" %}
+    {% include "issues.html" %}    
     {% include "about.html" %}
 
 
