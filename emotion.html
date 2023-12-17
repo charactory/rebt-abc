@@ -1,18 +1,45 @@
-<p><h2>{% block emo_name %}{% endblock %}</h2></p>
+<p>
+<h2>{% block emo_name %}{% endblock %}</h2>
+</p>
 
-<p><h3>Typical activating events associated with emotion</h3></p>
-{% block emo_a %}
-{% endblock %}
+<div id="emotion_table">
+    <div>
+        <p>
+        <h3>Activating events typically associated with emotion</h3>
+        </p>
 
-<p><h3>Inferences that can trigger emotion</h3></p>
-{% block emo_eg %}
-{% endblock %}
+        {% block emo_a %}
+        {% endblock %}
+
+    </div>
 
 
-<p><h3>Unhelpful behaviours associated with emotion</h3></p>
-{% block emo_behaviours %}
-{% endblock %}
+    <div>
+        <p>
+        <h3>Inferences that can trigger emotion</h3>
+        </p>
 
-<p><h3>Subsequent thoughts that typically occur in response to emotion</h3></p>
-{% block emo_thoughts %}
-{% endblock %}
+        {% block emo_eg %}
+        {% endblock %}
+
+    </div>
+
+</div>
+
+
+<div id="emotion_table">
+    <div>
+        <p>
+        <h3>Unhelpful behaviours associated with emotion</h3>
+        </p>
+        {% block emo_behaviours %}
+        {% endblock %}
+    </div>
+    <div>
+        <p>
+        <h3>Subsequent thoughts that typically occur in response to emotion</h3>
+        </p>
+        {% block emo_thoughts %}
+        {% endblock %}
+    </div>
+</div>
