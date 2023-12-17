@@ -18,6 +18,8 @@
 
     html {
       font-size: 15px;
+      --light: #ddd;
+      --dark: #151515;
       --a-green: #095D42;
       --b-blue: #3581B8;
       --c-pink: #D65780;
@@ -30,16 +32,16 @@
 
       /* Color scheme */
 
-      --textcolor: #151515;
-      --bgcolor: #ddd;
+      --textcolor: var(--dark);
+      --bgcolor: var(--light);
       /*--highlight: #2749c9;*/
 
     }
 
     @media (prefers-color-scheme: dark) {
       * {
-        --textcolor: #ddd;
-        --bgcolor: #151515;
+        --textcolor: var(--light);
+        --bgcolor: var(--dark);
       }
     }
 
