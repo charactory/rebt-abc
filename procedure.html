@@ -24,22 +24,23 @@
 </section>
 
 <section id="step1">
-    <p>
     <h3>
-        1.1 Decide on a problem to work on and identify a specific instance it happened
+        <p>
+
+            1.1 Decide on a problem to work on and identify a specific instance it happened </p>
+
     </h3>
 
-    </p>
 
     <p>
         You want to be as specific as possible. Even if a problem has occurred many times, it helps to pinpoint a
         specific instance so you can be clear about what you were thinking and feeling at the time.
     </p>
-    <p>
     <h3>
-        1.2 Determine what you can control or influence
+        <p>
+            1.2 Determine what you can control or influence
+        </p>
     </h3>
-    </p>
 
 
     <p>
@@ -164,6 +165,7 @@
     </p>
     <p>
         See {{c.link('beliefs', "Beliefs")}} for more information on each component.</p>
+
     {% include "unhelpfulbelief.html" %}
 
     <p>
@@ -186,33 +188,37 @@
 
     <p> It might take some time to identify the unhelpful belief, and arriving at the evaluation might require
         asking the question repeatedly. For example:</p>
-    <span class="emotable">
-        <div style="border: 1px solid var(--light); padding: 0.8em; display: inline-block;">
-            <p>
-                I might get fined for not paying a bill.</p>
-            <p>
-                What would then happen?</p>
-            <p>
-                I might have less money in my account.</p>
-            <p>
-                What's the consequence of that?</p>
-            <p>
-                I might not be able to afford something later.</p>
-            <p>
-                What's so bad about that?</p>
-            <p>
-                Then I can't have what I need.</p>
-            <p>
-                And if you can't have what you need, what then?</p>
-            <p>
-                It would be terrible and I wouldn't be able to cope without it.</p>
-        </div>
-    </span>
+
+    {% call c.box() %}
+    <p>
+        I might get fined for not paying a bill.</p>
+    <p>
+        <i>What would then happen?</i>
+    </p>
+    <p>
+        I might have less money in my account.</p>
+    <p>
+        <i>What's the consequence of that?</i>
+    </p>
+    <p>
+        I might not be able to afford something later.</p>
+    <p>
+        <i>What's so bad about that?</i>
+    </p>
+    <p>
+        Then I can't have what I need.</p>
+    <p>
+        <i>And if you can't have what you need, what then?</i>
+    </p>
+    <p>
+        <b>It would be awful and I wouldn't be able to cope without it.</b>
+    </p>
+
+    {% endcall %}
     <p></p>
     <p>
-        Talking to a clinician will help a lot with figuring out what unhelpful beliefs are being activated in
-        the
-        situation.
+        Talking to another person (a trusted friend, a qualified counsellor) can help a lot with figuring out what
+        unhelpful beliefs are being activated in the situation.
     </p>
     <p></p>
     <hr>
@@ -250,6 +256,12 @@
 </section>
 
 <section id="step5">
+    <h3>
+        <p>
+
+            5. Formulate Unhelpful Beliefs </p>
+
+    </h3>
     <p>
         Now that you have successfully challenged your original unhelpful belief, the last step is to come up with a new
         belief that will be more helpful for you.</p>

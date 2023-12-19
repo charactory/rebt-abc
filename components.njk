@@ -2,10 +2,17 @@
   <a href="#{{name}}">{{value}}</a>
 {% endmacro %}
 
+{% macro box() %}
+  <div style="border: 1px solid var(--textcolor); padding: 0.9em; display: inline-block; margin-bottom: 0.5rem;">
+    {{caller()}}
+  </div>
+{% endmacro %}
+
+
 {% macro et(value='', type='text') %}
   <span class="emotable">
     <table>
-      <tbody style="border:1px solid white; border: 1px solid white; padding: 0.4em">
+      <tbody style="border:1px solid white; padding: 0.4em">
         {{value}}
       </tbody>
     </table>
