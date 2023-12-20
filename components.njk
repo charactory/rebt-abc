@@ -9,6 +9,15 @@
 {% endmacro %}
 
 
+
+{% macro question_box() %}
+  <div style="border: 1px solid var(--textcolor); background-color: var(--c-pink); padding: 0.3em; display: inline-block; margin-bottom: 0.2rem;">
+    {{caller()}}
+  </div>
+{% endmacro %}
+
+
+
 {% macro et(value='', type='text') %}
   <span class="emotable">
     <table>

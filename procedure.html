@@ -47,7 +47,7 @@
     <p>
         Before looking at the ABC method, consider other actions that can be taken:
     </p>
-    <div style="border: 1px solid var(--light); padding: 0.8em; display: inline-block;">
+    {% call c.box() %}
         <p>
             <b>Direct control</b> -- is there a concrete action you can take about the problem? eg. starting a task you
             are
@@ -58,7 +58,7 @@
             explaining
             to a loved one why their comments are upsetting
         </p>
-    </div>
+    {% endcall %}
     <p></p>
     <p>
         If you have done everything possible or control or influence the problem and you still struggle with unhelpful
@@ -93,18 +93,24 @@
     <p></p>
     <p>The adversity is usually a subjective opinion, but it can also be an objective fact about what happened.</p>
     <p></p>
+    {% call c.box() %}
     <p>Example:</p>
     <p></p>
     <p>Situation: I lost my job.</p>
     <p>Adversity: I don’t know how I can pay next fortnight’s bills</p>
     <p></p>
+    {% endcall %}
     <p>There are usually many possible adversities generated from a situation, so using the same example:</p>
     <p></p>
+    {% call c.box() %}
+
     <p>Adversity: I didn’t try hard enough at work to keep my job</p>
     <p>Adversity: I lost the job because my boss doesn’t like me</p>
     <p>Adversity: My wife is going to be disappointed in me</p>
     <p>Adversity: I have to look for a job at a time when there are few advertised</p>
     <p>Adversity: I won’t be able to sleep tonight</p>
+    {% endcall %}
+
     <p></p>
     <p>Different adversities generate different types of unhelpful emotions. It is possible to have multiple unhelpful
         negative emotions about a single situation.</p>
