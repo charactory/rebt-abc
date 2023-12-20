@@ -48,31 +48,26 @@
         Before looking at the ABC method, consider other actions that can be taken:
     </p>
     {% call c.box() %}
-        <p>
-            <b>Direct control</b> -- is there a concrete action you can take about the problem? eg. starting a task you
-            are
-            procrastinating on
-        </p>
-        <p>
-            <b>Indirect influence</b> -- can you influence the situation to lessen the impact of the problem, eg.
-            explaining
-            to a loved one why their comments are upsetting
-        </p>
+    <p>
+        <b>Direct control</b> -- is there a concrete action you can take about the problem? eg. starting a task you
+        are
+        procrastinating on
+    </p>
+    <p>
+        <b>Indirect influence</b> -- can you influence the situation to lessen the impact of the problem, eg.
+        explaining
+        to a loved one why their comments are upsetting
+    </p>
     {% endcall %}
     <p></p>
     <p>
         If you have done everything possible or control or influence the problem and you still struggle with unhelpful
         emotions or behaviours, then the last step available is to <i>cope</i> with the situation. This is where the ABC
-        method becomes relevant.
+        model becomes relevant.
     </p>
     <p>
-        Engaging in problem solving might be enough sometimes, but often even if we can do something practical to solve
-        a problem, we might still be emotionally disturbed about it. The ABC procedure can help us cope with unhelpful
-        negative emotions that occur in the presence of the problem.
-    </p>
-    <p>
-        If there are concrete actions that you can carry out about the problem but you are struggling to do it because
-        of how you feel, then learning to cope more effectively with the ABC procedure will help.
+        Learning to cope more effectively with unhelpful emotions is helpful anytime you have a problem as it would be
+        more difficult to control or influence a situation when your emotions are hindering you from taking action.
     </p>
     <hr>
     <p>
@@ -102,8 +97,8 @@
     {% endcall %}
     <p>There are usually many possible adversities generated from a situation, so using the same example:</p>
     <p></p>
-    {% call c.box() %}
 
+    {% call c.box() %}
     <p>Adversity: I didn’t try hard enough at work to keep my job</p>
     <p>Adversity: I lost the job because my boss doesn’t like me</p>
     <p>Adversity: My wife is going to be disappointed in me</p>
@@ -117,8 +112,6 @@
     <p></p>
     <p>Another way of figuring out the adversity to ask yourself what you would want to remove from the situation to
         make the unhelpful negative emotion go away.</p>
-
-
     <hr>
     <p>
         Go to: {{c.link('step3', "3. Identify Consequences")}}
@@ -128,7 +121,6 @@
     <h2>3. Identify Consequences</h2>
     <h3>
         <p>
-
             3.1 List the emotions you felt and behaviours you performed when the situation occurred
         </p>
 
@@ -172,7 +164,7 @@
         </tbody>
     </table>
     <p>
-        Q: My emotion isn't listed here. What do I do?
+        {{c.link('emotion_not_listed', "Q: My emotion isn't listed here. What do I do?")}}
     </p>
 
     <p>
@@ -208,7 +200,7 @@
         Behavioral goals are the most helpful -- ie. what you would be doing differently if you were
         coping more effectively with the problem.
     </p>
-    <p>Q: I just want to feel better. Isn't that a valid goal?</p>
+    <p>{{c.link('feel_better', "Q: I just want to feel better. Isn't that a valid goal?")}}</p>
     <p></p>
     <hr>
     <p>
