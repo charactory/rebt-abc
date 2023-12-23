@@ -1130,6 +1130,9 @@
       .w3-sidebar.w3-collapse {
         display: block !important
       }
+      #closeButton {
+        display: block !important;
+      }
     }
 
     @media (max-width:992px) and (min-width:601px) {
@@ -2216,7 +2219,7 @@
     <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left"
       style="padding-left:0.5rem; background-color: var(--bgcolor);" id="mySidebar">
       <button class="w3-bar-item w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
-        style="font-size: 1.5rem; margin-bottom: 2rem;">☰</button>
+        style="font-size: 1.5rem; margin-bottom: 2rem;" id="closeButton">☰</button>
       <p>
         {{c.link('intro', "Intro: What is the \'ABC Model\'?")}}
       </p>
@@ -2263,7 +2266,7 @@
   </header>
   <main>
 
-    <section id="home" class="w3-main" style="margin-left:200px" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()"> <!-- HOME -->
+    <section id="home" class="w3-main" style="margin-left:275px" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()"> <!-- HOME -->
       <p>
         <span class="newthought">Welcome.</span> This is a tool for teaching the ABC model for disputing unhelpful
         thoughts to improve what we feel,
