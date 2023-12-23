@@ -38,14 +38,14 @@
       /*--highlight: #2749c9;*/
 
     }
-
+/*
     @media (prefers-color-scheme: dark) {
       * {
         --textcolor: var(--light);
         --bgcolor: var(--dark);
       }
     }
-
+*/
     body {
       font-family: "et", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
       line-height: 1.5;
@@ -54,7 +54,6 @@
       position: relative;
       max-width: 64em;
       /* remove this for a full-width layout */
-      margin: 0 auto;
       /* centers the layout */
     }
 
@@ -84,7 +83,7 @@
     /* ------- Header ------- */
 
     header {
-      padding: 4vw 4vw 0 4vw;
+      padding: 0vw 0vw 0 0vw;
       display: flex;
       flex-wrap: wrap;
       position: absolute;
@@ -134,7 +133,7 @@
       margin: 0.5em 0 .5em 0;
     }
 
-    section > h3 {
+    section>h3 {
       font-size: 1.5em;
       font-weight: 600;
       margin: 0.3em 0 .4em 0;
@@ -153,7 +152,9 @@
       margin-bottom: .6em;
     }
 
-    .emotion_table p, ul, ol {
+    .emotion_table p,
+    ul,
+    ol {
       font-size: 1.1rem;
       line-height: 1.5rem;
       max-width: 65ch;
@@ -494,6 +495,265 @@
         content: "]";
       }
 
+      .w3-animate-fading {
+        animation: fading 10s infinite
+      }
+
+      @keyframes fading {
+        0% {
+          opacity: 0
+        }
+
+        50% {
+          opacity: 1
+        }
+
+        100% {
+          opacity: 0
+        }
+      }
+
+      .w3-animate-opacity {
+        animation: opac 0.8s
+      }
+
+      @keyframes opac {
+        from {
+          opacity: 0
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      .w3-animate-top {
+        position: relative;
+        animation: animatetop 0.4s
+      }
+
+      @keyframes animatetop {
+        from {
+          top: -300px;
+          opacity: 0
+        }
+
+        to {
+          top: 0;
+          opacity: 1
+        }
+      }
+
+      .w3-animate-left {
+        position: relative;
+        animation: animateleft 0.4s
+      }
+
+      @keyframes animateleft {
+        from {
+          left: -300px;
+          opacity: 0
+        }
+
+        to {
+          left: 0;
+          opacity: 1
+        }
+      }
+
+      .w3-animate-right {
+        position: relative;
+        animation: animateright 0.4s
+      }
+
+      @keyframes animateright {
+        from {
+          right: -300px;
+          opacity: 0
+        }
+
+        to {
+          right: 0;
+          opacity: 1
+        }
+      }
+
+      .w3-animate-bottom {
+        position: relative;
+        animation: animatebottom 0.4s
+      }
+
+      @keyframes animatebottom {
+        from {
+          bottom: -300px;
+          opacity: 0
+        }
+
+        to {
+          bottom: 0;
+          opacity: 1
+        }
+      }
+
+      .w3-animate-zoom {
+        animation: animatezoom 0.6s
+      }
+
+      @keyframes animatezoom {
+        from {
+          transform: scale(0)
+        }
+
+        to {
+          transform: scale(1)
+        }
+      }
+
+      .w3-animate-input {
+        transition: width 0.4s ease-in-out
+      }
+
+      .w3-animate-input:focus {
+        width: 100% !important
+      }
+
+      .w3-sidebar {
+        height: 100%;
+        width: 200px;
+        background-color: #fff;
+        position: fixed !important;
+        z-index: 2000;
+        overflow: auto
+      }
+
+      .w3-bar .w3-bar-item {
+        padding: 8px 16px;
+        float: left;
+        width: auto;
+        border: none;
+        display: block;
+        outline: 0
+      }
+
+      .w3-bar .w3-dropdown-hover,
+      .w3-bar .w3-dropdown-click {
+        position: static;
+        float: left
+      }
+
+      .w3-bar .w3-button {
+        white-space: normal;
+      }
+
+      .w3-bar-block .w3-bar-item {
+        width: 100%;
+        display: block;
+        padding: 8px 16px;
+        text-align: left;
+        border: none;
+        white-space: normal;
+        float: none;
+        outline: 0
+      }
+
+      .w3-bar-block.w3-center .w3-bar-item {
+        text-align: center
+      }
+
+      .w3-block {
+        display: block;
+        width: 100%
+      }
+
+      .w3-hide-small {
+        display: none !important
+      }
+
+      .w3-mobile {
+        display: block;
+        width: 100% !important
+      }
+
+      .w3-bar-item.w3-mobile,
+      .w3-dropdown-hover.w3-mobile,
+      .w3-dropdown-click.w3-mobile {
+        text-align: center
+      }
+
+      .w3-button:hover {
+        color: #000 !important;
+        background-color: #ccc !important
+      }
+
+      .w3-teal,
+      .w3-hover-teal:hover {
+        color: #fff !important;
+        background-color: #009688 !important
+      }
+
+
+      @media (max-width:768px) {
+        .w3-modal-content {
+          width: 500px
+        }
+
+        .w3-modal {
+          padding-top: 50px
+        }
+      }
+
+      @media (min-width:993px) {
+        .w3-modal-content {
+          width: 900px
+        }
+
+        .w3-hide-large {
+          display: none !important
+        }
+
+        .w3-sidebar.w3-collapse {
+          display: block !important;
+        }
+        
+        body {
+          margin-left: 200px !important;
+        }
+
+
+        #mySidebar {
+          display: block !important;
+          background-color: #009820;
+        }
+      }
+
+      @media (max-width:992px) and (min-width:601px) {
+        .w3-hide-medium {
+          display: none !important
+        }
+      }
+
+      @media (max-width:992px) {
+        .w3-sidebar {
+          display: none
+        }
+
+        body {
+          margin-left: 0 !important;
+          margin-right: 0 !important
+        }
+
+        .w3-auto {
+          max-width: 100%
+        }
+      }
+
+      .w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+
+      #mySidebar {
+        background-color: var(--bgcolor);
+      }
+
+      
     }
   </style>
 
@@ -512,6 +772,44 @@
 <body>
 
   <header>
+
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; background-color: var(--bgcolor);" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()" style="font-size: 1.5rem;">☰</button>
+      <p>
+        {{c.link('intro', "Intro: What is the \'ABC Model\'?")}}
+      </p>
+      <p style="margin-top:0.4rem">
+        {{c.link('step1', "1. Define the Problem")}}
+      </p>
+      <p style="margin-top:0.2rem">
+        {{c.link('step2', "2. Define the Adversity")}}
+      </p>
+
+      <p style="margin-top:0.2rem">
+        {{c.link('step3', "3. Identify Consequences")}}
+      </p>
+
+      <p style="margin-top:0.2rem">
+        {{c.link('step4', "4. Identify Unhelpful Beliefs")}}
+      </p>
+
+      <p style="margin-top:0.2rem">
+        {{c.link('step5', "5. Dispute Unhelpful Beliefs")}}
+      </p>
+
+      <p style="margin-top:0.2rem">
+        {{c.link('step6', "6. Formulate Helpful Alternative Beliefs")}}
+      </p>
+
+    </div>
+
+    <div class="w3-teal">
+      <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()" id="openButton" style ="display: none; font-size: 1.5rem;">☰</button>
+      <div class="w3-container">
+      </div>
+    </div>
+
+<!--
     <h1>
       <a href="#home">ABC Model</a>
     </h1>
@@ -520,6 +818,7 @@
       <a href="#faqs">FAQs</a>
       <a href="#about">About</a>
     </nav>
+    -->
   </header>
   <main>
 
@@ -572,13 +871,26 @@
     {% include "procedure.html" %}
     {% include "model.html" %}
     {% include "emotions.html" %}
-    {% include "issues.html" %}    
+    {% include "issues.html" %}
     {% include "about.html" %}
 
 
 
 
   </main>
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openButton").style.display = "none";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openButton").style.display = "block";
+    }
+  </script>
+
 </body>
 
 </html>
