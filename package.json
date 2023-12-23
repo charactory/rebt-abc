@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "vite": "^5.0.0",
+    "vite-plugin-minify": "^1.5.2",
     "vite-plugin-nunjucks": "^0.2.0"
   }
 }
