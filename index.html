@@ -19,11 +19,14 @@
 
     html {
       font-size: 15px;
-      --light: #ddd;
-      --dark: #151515;
+      --light: #F0EEED;
+      --sidebar-grey: #D3D3D3;
+      --dark: #101010;
       --a-green: #095D42;
       --b-blue: #3581B8;
       --c-pink: #D65780;
+      --a-teal: #609EA2;
+      --b-maroon: #C92C6D;
     }
 
     * {
@@ -66,13 +69,13 @@
       display: none;
       position: absolute;
       top: 0;
-      margin-left:275px;
+      margin-left: 275px;
       min-height: 100vh;
       width: 100%;
       background: var(--bgcolor);
     }
 
-    #mySidebar > p {
+    #mySidebar>p {
       font-size: 1.2rem;
     }
 
@@ -722,7 +725,7 @@
 
     .w3-sidebar {
       height: 100%;
-      width: 300px;
+      width: 325px;
       padding-right: 0.5rem;
       background-color: #fff;
       position: fixed !important;
@@ -747,7 +750,8 @@
       padding: 8px 16px
     }
 
-    section, .w3-main,
+    section,
+    .w3-main,
     #main {
       transition: margin-left .4s
     }
@@ -1136,6 +1140,7 @@
       .w3-sidebar.w3-collapse {
         display: block !important
       }
+
       #closeButton {
         display: block !important;
       }
@@ -1152,7 +1157,8 @@
         display: none
       }
 
-      section, .w3-main {
+      section,
+      .w3-main {
         margin-left: 0 !important;
         margin-right: 0 !important
       }
@@ -2222,45 +2228,61 @@
 
   <header>
 
-    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left"
-      style="padding-left:1rem; background-color: var(--bgcolor);" id="mySidebar">
-      <button class="w3-bar-item w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="background-color: var(--sidebar-grey);"
+      id="mySidebar">
+      <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
         style="font-size: 1.5rem; margin-bottom: 2rem;" id="closeButton">☰</button>
+
+      <div style="padding-left:1rem">
         <p>
           {{c.link('home', "Home")}}
         </p>
 
-      <p>
-        {{c.link('intro', "Intro: What is the \'ABC Model\'?")}}
-      </p>
-      <p style="margin-top:0.4rem">
-        1 {{c.link('step1', "Define the Problem")}}
-      </p>
-      <p style="margin-top:0.2rem">
-        2. {{c.link('step2', "Define the Adversity")}}
-      </p>
+        <p>
+          {{c.link('intro', "Intro: What is the \'ABC Model\'?")}}
+        </p>
+        <p style="margin-top:0.4rem">
+          1 {{c.link('step1', "Define the Problem")}}
+        </p>
+        <p style="margin-top:0.2rem">
+          2. {{c.link('step2', "Define the Adversity")}}
+        </p>
 
-      <p style="margin-top:0.2rem">
-        3. {{c.link('step3', "Identify Consequences")}}
-      </p>
+        <p style="margin-top:0.2rem">
+          3. {{c.link('step3', "Identify Consequences")}}
+        </p>
 
-      <p style="margin-top:0.2rem">
-        4. {{c.link('step4', "Identify Unhelpful Beliefs")}}
-      </p>
+        <p style="margin-top:0.2rem">
+          4. {{c.link('step4', "Identify Unhelpful Beliefs")}}
+        </p>
 
-      <p style="margin-top:0.2rem">
-        5. {{c.link('step5', "Dispute Unhelpful Beliefs")}}
-      </p>
+        <p style="margin-top:0.2rem">
+          5. {{c.link('step5', "Dispute Unhelpful Beliefs")}}
+        </p>
 
-      <p style="margin-top:0.2rem">
-        6. {{c.link('step6', "Formulate Helpful Alternative Beliefs")}}
-      </p>
+        <p style="margin-top:0.2rem">
+          6. {{c.link('step6', "Formulate Helpful Alternative Beliefs")}}
+        </p>
+        <hr>
 
+        <p style="margin-top:0.2rem">
+          {{c.link('faqs', "Frequently Asked Questions")}}
+        </p>
+        
+        <p style="margin-top:0.2rem">
+          {{c.link('emotions', "Learn More About Emotions")}}
+        </p>
+
+        <p style="margin-top:0.2rem">
+          {{c.link('examples', "Read Examples")}}
+        </p>
+
+
+      </div>
     </div>
 
-      <button class="w3-button w3-xlarge" onclick="w3_open()" id="openButton"
-        style="font-size: 1.5rem;">☰</button>
-      <div class="w3-container">
+    <button class="w3-button w3-xlarge" onclick="w3_open()" id="openButton" style="font-size: 1.5rem;">☰</button>
+    <div class="w3-container">
     </div>
 
     <!--
@@ -2276,7 +2298,8 @@
   </header>
   <main>
 
-    <section id="home" class="w3-main" style="margin-left:275px" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()"> <!-- HOME -->
+    <section id="home" class="w3-main" style="margin-left:275px" onclick="w3_close()" ontouchstart="w3_close()"
+      onscroll="w3_close()"> <!-- HOME -->
       <p>
         <span class="newthought">Welcome.</span> This is a tool for teaching the ABC model for disputing unhelpful
         thoughts to improve what we feel,
@@ -2340,7 +2363,8 @@
     }
 
     function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
+      const bar = document.getElementById("mySidebar");
+      bar.style.display = "none";
       document.getElementById("openButton").style.display = "block";
     }
   </script>
