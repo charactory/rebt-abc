@@ -66,6 +66,7 @@
       display: none;
       position: absolute;
       top: 0;
+      margin-left:275px;
       min-height: 100vh;
       width: 100%;
       background: var(--bgcolor);
@@ -741,7 +742,7 @@
       padding: 8px 16px
     }
 
-    .w3-main,
+    section, .w3-main,
     #main {
       transition: margin-left .4s
     }
@@ -1146,7 +1147,7 @@
         display: none
       }
 
-      .w3-main {
+      section, .w3-main {
         margin-left: 0 !important;
         margin-right: 0 !important
       }
@@ -2220,6 +2221,10 @@
       style="padding-left:0.5rem; background-color: var(--bgcolor);" id="mySidebar">
       <button class="w3-bar-item w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
         style="font-size: 1.5rem; margin-bottom: 2rem;" id="closeButton">☰</button>
+        <p>
+          {{c.link('home', "Home")}}
+        </p>
+
       <p>
         {{c.link('intro', "Intro: What is the \'ABC Model\'?")}}
       </p>
