@@ -20,7 +20,7 @@
     html {
       font-size: 15px;
       --light: #F0EEED;
-      --sidebar-grey: #D3D3D3;
+      --sidebar-grey: #D7D7D7;
       --dark: #101010;
       --a-green: #095D42;
       --b-blue: #3581B8;
@@ -1142,6 +1142,9 @@
       }
 
       #closeButton {
+        display: none !important;
+      }
+      #buttonSpaceFiller {
         display: block !important;
       }
     }
@@ -2232,7 +2235,8 @@
       id="mySidebar">
       <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
         style="font-size: 1.5rem; margin-bottom: 2rem;" id="closeButton">☰</button>
-
+        <div id ="buttonSpaceFiller" style="height: 70px; display: none"></div>
+        
       <div style="padding-left:1rem">
         <p>
           {{c.link('home', "Home")}}
@@ -2319,6 +2323,7 @@
     {% include "procedure.html" %}
     {% include "model.html" %}
     {% include "emotions.html" %}
+    {% include "examples.html" %}
     {% include "issues.html" %}
     {% include "about.html" %}
 
