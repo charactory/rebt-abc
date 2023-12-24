@@ -739,6 +739,7 @@
       #closeButton {
         display: none !important;
       }
+
       #buttonSpaceFiller {
         display: block !important;
       }
@@ -1247,8 +1248,6 @@
     .w3-hover-none:hover {
       box-shadow: none !important
     }
-
-
   </style>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1271,52 +1270,57 @@
       id="mySidebar">
       <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
         style="font-size: 1.5rem; margin-bottom: 2rem;" id="closeButton">☰</button>
-        <div id ="buttonSpaceFiller" style="height: 70px; display: none"></div>
-        
+      <div id="buttonSpaceFiller" style="height: 70px; display: none"></div>
+
       <div style="padding-left:1rem">
-        <p>
-          {{c.link('home', "Home")}}
-        </p>
+        <nav>
+          <p>
+            {{c.link('home', "Home")}}
+          </p>
 
-        <p>
-          {{c.link('intro', "Intro: What is the \'ABC Model\'?")}}
-        </p>
-        <p style="margin-top:0.4rem">
-          1 {{c.link('step1', "Define the Problem")}}
-        </p>
-        <p style="margin-top:0.2rem">
-          2. {{c.link('step2', "Define the Adversity")}}
-        </p>
+          <p>
+            {{c.link('intro', "Intro: What is the \'ABC Model\'?")}}
+          </p>
+          <p style="margin-top:0.4rem">
+            1 {{c.link('step1', "Define the Problem")}}
+          </p>
+          <p style="margin-top:0.2rem">
+            2. {{c.link('step2', "Define the Adversity")}}
+          </p>
 
-        <p style="margin-top:0.2rem">
-          3. {{c.link('step3', "Identify Consequences")}}
-        </p>
+          <p style="margin-top:0.2rem">
+            3. {{c.link('step3', "Identify Consequences")}}
+          </p>
 
-        <p style="margin-top:0.2rem">
-          4. {{c.link('step4', "Identify Unhelpful Beliefs")}}
-        </p>
+          <p style="margin-top:0.2rem">
+            4. {{c.link('step4', "Identify Unhelpful Beliefs")}}
+          </p>
 
-        <p style="margin-top:0.2rem">
-          5. {{c.link('step5', "Dispute Unhelpful Beliefs")}}
-        </p>
+          <p style="margin-top:0.2rem">
+            5. {{c.link('step5', "Dispute Unhelpful Beliefs")}}
+          </p>
 
-        <p style="margin-top:0.2rem">
-          6. {{c.link('step6', "Formulate Helpful Alternative Beliefs")}}
-        </p>
-        <hr>
+          <p style="margin-top:0.2rem">
+            6. {{c.link('step6', "Formulate Helpful Alternative Beliefs")}}
+          </p>
+          <hr>
 
-        <p style="margin-top:0.2rem">
-          {{c.link('faqs', "Frequently Asked Questions")}}
-        </p>
+          <p style="margin-top:0.2rem">
+            {{c.link('faqs', "Frequently Asked Questions")}}
+          </p>
 
-        <p style="margin-top:0.2rem">
-          {{c.link('emotions', "Learn More About Emotions")}}
-        </p>
+          <p style="margin-top:0.2rem">
+            {{c.link('emotions', "Learn More About Emotions")}}
+          </p>
 
-        <p style="margin-top:0.2rem">
-          {{c.link('examples', "Read Examples")}}
-        </p>
+          <p style="margin-top:0.2rem">
+            {{c.link('examples', "Read Examples")}}
+          </p>
 
+          <p style="margin-top:0.2rem">
+            {{c.link('about', "About This Tool")}}
+          </p>
+        </nav>
 
       </div>
     </div>
@@ -1324,17 +1328,6 @@
     <button class="w3-button w3-xlarge" onclick="w3_open()" id="openButton" style="font-size: 1.5rem;">☰</button>
     <div class="w3-container">
     </div>
-
-    <!--
-    <h1>
-      <a href="#home">ABC Model</a>
-    </h1>
-    <nav>
-      <a href="#emotions">Emotions</a>
-      <a href="#faqs">FAQs</a>
-      <a href="#about">About</a>
-    </nav>
-    -->
   </header>
   <main>
 
