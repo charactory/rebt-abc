@@ -737,6 +737,11 @@
         display: none !important;
       }
 
+      #openButton {
+        display: none !important;
+      }
+
+
       #buttonSpaceFiller {
         display: block !important;
       }
@@ -1369,7 +1374,11 @@
       const bar = document.getElementById("mySidebar");
       bar.style.display = "none";
       document.getElementById("buttonSpaceFiller").style.display = "none";
+      if (window.innerWidth > 993) {
+      } else{
       document.getElementById("openButton").style.display = "block";
+      document.getElementById("buttonSpaceFiller").style.display = "none";
+      };
     }
   </script>
 
