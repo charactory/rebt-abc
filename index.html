@@ -64,19 +64,19 @@
     /* ------- Sections ------- */
 
     section {
-      padding: calc(6em + 2vw) 4vw 6vw 4vw;
+      padding: calc(3em + 2vw) 4vw 6vw 4vw;
       /* ! Everything below is needed ! */
       display: none;
       position: absolute;
       top: 0;
-      margin-left: 310px;
+      margin-left: 325px;
       min-height: 100vh;
       width: 100%;
       background: var(--bgcolor);
     }
 
     #mySidebar>p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     section:target {
@@ -339,7 +339,10 @@
       background-color: inherit;
       text-align: center;
       cursor: pointer;
-      white-space: nowrap
+      white-space: nowrap;
+      position: fixed;
+      height: 70px;
+      z-index: 100;
     }
 
     .w3-btn:hover {
@@ -665,12 +668,6 @@
 
     .w3-show-inline-block {
       display: inline-block !important
-    }
-
-    @media (max-width:1205px) {
-      .w3-auto {
-        max-width: 95%
-      }
     }
 
     @media (max-width:600px) {
@@ -1270,7 +1267,7 @@
       id="mySidebar">
       <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
         style="font-size: 1.5rem; margin-bottom: 2rem;" id="closeButton">☰</button>
-      <div id="buttonSpaceFiller" style="height: 70px; display: none"></div>
+      <div id="buttonSpaceFiller" style="height: 90px; width: 317.5px; display: none"></div>
 
       <div style="padding-left:1rem">
         <nav>
@@ -1365,11 +1362,13 @@
     function w3_open() {
       document.getElementById("mySidebar").style.display = "block";
       document.getElementById("openButton").style.display = "none";
+      document.getElementById("buttonSpaceFiller").style.display = "block";
     }
 
     function w3_close() {
       const bar = document.getElementById("mySidebar");
       bar.style.display = "none";
+      document.getElementById("buttonSpaceFiller").style.display = "none";
       document.getElementById("openButton").style.display = "block";
     }
   </script>
