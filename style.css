@@ -13,7 +13,7 @@
   }
 
   html {
-    font-size: 15px;
+    font-size: 14px;
     --light: #F0EEED;
     --sidebar-grey: #D7D7D7;
     --dark: #101010;
@@ -109,6 +109,13 @@
 
   nav>p {
     font-size: 1.2rem;
+  }
+
+  aside {
+    font-size: 0.9rem;
+    position: absolute;
+    right: -150px;
+    width: 288px;
   }
 
   /* ------- General ------- */
@@ -590,9 +597,17 @@
     .w3-hide-medium {
       display: none !important
     }
+    
   }
 
   @media (max-width:992px) {
+    aside {
+      position: inherit;
+      right: inherit;
+      width: inherit;
+    }
+
+
     .w3-sidebar.w3-collapse {
       display: none
     }
