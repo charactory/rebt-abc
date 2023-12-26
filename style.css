@@ -198,16 +198,13 @@
     grid-template-columns: repeat(2, 1fr);
     max-width: 75ch;
     grid-gap: 0.5rem;
+    margin-top: 0.5rem;
     margin-bottom: 1.2rem;
   }
 
 
   ul {
     list-style-type: circle;
-  }
-
-  ul li::marker {
-    content: "\2023   ";
   }
 
   li {
@@ -217,7 +214,7 @@
   ul,
   ol {
     padding-left: 2ch;
-    list-style-position: outside;
+    list-style: outside disc;
   }
 
   b,
