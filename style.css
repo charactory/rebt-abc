@@ -149,7 +149,7 @@ h2 {
 }
 
 section>h3 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 600;
   margin: 0.3em 0 .4em 0;
 }
@@ -225,6 +225,7 @@ ol {
 b,
 strong {
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 small {
