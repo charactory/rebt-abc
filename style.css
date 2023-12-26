@@ -112,9 +112,11 @@
   }
 
   aside {
+    padding-left: 0.3rem;
+    border-left: solid 1px var(--sidebar-grey);
     font-size: 0.9rem;
     position: absolute;
-    right: -150px;
+    right: -160px;
     width: 288px;
   }
 
@@ -227,7 +229,7 @@
   b,
   strong {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   small {
