@@ -44,7 +44,7 @@ html {
 }
 */
 body {
-  font-family: "Charter BT", Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-family: Charter, "Charter BT", 'Bitstream Charter', 'Sitka Text', Cambria, serif;
   line-height: 1.5;
   color: var(--textcolor);
   background: var(--bgcolor);
