@@ -144,6 +144,7 @@
 
   section>h3 {
     font-size: 1.4em;
+    max-width: 60ch;
     font-weight: 600;
     margin: 0.3em 0 .4em 0;
   }
@@ -156,7 +157,7 @@
   article {
     font-size: 1.4rem;
     line-height: 2rem;
-    max-width: 65ch;
+    max-width: 60ch;
     /* Limit line-length to 60 characters */
     margin-bottom: .9em;
   }
