@@ -1,4 +1,5 @@
 {% include "fonts/charter_bt.css" %}
+{% include "fonts/charter_bt_italic.css" %}
 {% include "fonts/libre_baskerville.css" %}
 
 .emotable {
@@ -132,7 +133,7 @@ section h1 {
 }
 
 h2 {
-  font-size: 2.4em;
+  font-size: 2.2em;
   font-family: 'Libre Baskerville', 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
   font-style: italic;
   font-weight: 400;
