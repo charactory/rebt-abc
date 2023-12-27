@@ -6,9 +6,6 @@
 
 {% include "fonts/libre_baskerville.css" %}
 
-{% include "fonts/vollkorn.css" %}
-
-
   .emotable {
     font-size: 0.8rem
   }
