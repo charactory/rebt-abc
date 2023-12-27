@@ -50,7 +50,7 @@
 }
 */
   body {
-    font-family: Vollkorn, Charter, "Charter BT", 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-family: Charter, "Charter BT", 'Bitstream Charter', 'Sitka Text', Cambria, serif;
     line-height: 1.5;
     color: var(--textcolor);
     background: var(--bgcolor);
@@ -234,7 +234,6 @@
     /* border: 1px solid var(--textcolor);  */
     padding: 0.9em; 
     display: inline-block; 
-    margin-bottom: 0.5rem; 
     max-width: 75ch;
   }
 
@@ -274,7 +273,7 @@
     height: 1px;
     border: 0;
     background: var(--textcolor);
-    margin: 1.5em 0;
+    margin: 2.5em 0 1.5em 0;
     opacity: 0.3;
     max-width: 85ch;
   }
