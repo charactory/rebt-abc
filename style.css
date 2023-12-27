@@ -197,10 +197,17 @@
   section>ul {
     font-size: 1.4rem;
     line-height: 2rem;
-    max-width: 65ch;
+    max-width: 60ch;
     /* Limit line-length to 60 characters */
-    margin-bottom: .6em;
   }
+
+  section> ol {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    max-width: 60ch;
+    /* Limit line-length to 60 characters */
+  }
+
 
   .emotion_table h3 {
     font-size: 1.3rem;
@@ -233,7 +240,7 @@
 
 
   ul {
-    list-style-type: circle;
+    list-style: outside circle;
   }
 
   li {
@@ -243,7 +250,8 @@
   ul,
   ol {
     padding-left: 2ch;
-    list-style: outside disc;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
   }
 
   b,
