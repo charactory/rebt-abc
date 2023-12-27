@@ -24,6 +24,8 @@
     --c-pink: #D65780;
     --a-teal: #609EA2;
     --b-maroon: #C92C6D;
+    --link-ochre-day: #675f4c;
+    --link-ochre-night: #898270;
   }
 
   * {
@@ -76,6 +78,14 @@
     font-size: 1.1rem;
   }
 
+  nav {
+    padding-left:1rem;
+  }
+
+  .sidebar_link a {
+    color: var(--textcolor);
+  }
+
   section:target {
     /* Show section */
     display: block;
@@ -126,7 +136,7 @@
 
   a {
     text-decoration: none;
-    color: var(--highlight);
+    color: var(--link-ochre-day);
     border-bottom: 1px solid;
   }
 
@@ -280,10 +290,6 @@
 
   img {
     vertical-align: middle
-  }
-
-  a {
-    color: inherit
   }
 
   .w3-striped tbody tr:nth-child(even) {
