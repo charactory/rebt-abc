@@ -2,6 +2,8 @@
 
 {% include "fonts/charter_bt_italic.css" %}
 
+{% include "fonts/charter_small_caps.css" %}
+
 {% include "fonts/libre_baskerville.css" %}
 
   .emotable {
@@ -237,8 +239,9 @@
   }
 
   span.newthought {
-    font-variant: small-caps;
-    font-size: 1.25em;
+    /*font-variant: small-caps;*/
+    font-family: "Charter Small Caps", Charter, "Charter BT", 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-size: 1.2em;
   }
 
   hr {
