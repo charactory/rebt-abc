@@ -1,11 +1,40 @@
-{% extends "divbox.html" %}
-
-{% block content %}
-<p><b>Example:</b></p>
-
-Activating Event:
-Beliefs:
-Consequences:
-Disputation:
-
+<h2>Example: {% block eg_title %}{% endblock %}</h2>
+<p><b>Problem:</b></p>
+{% block eg_problem %}
 {% endblock %}
+
+<p><b>Situation:</b></p>
+{% block eg_situation %}
+{% endblock %}
+
+<p><b>Options for control/influence:</b></p>
+{% block eg_control_influence %}
+{% endblock %}
+
+<p><b>Adversity:</b></p>
+{% block eg_adversity %}
+{% endblock %}
+
+<p><b>Beliefs:</b></p>
+{% block eg_beliefs %}
+{% endblock %}
+
+<p><b>Consequences:</b></p>
+{% block eg_consequences %}
+{% endblock %}
+
+<p><b>Disputation:</b></p>
+{% block eg_disputation %}
+{% endblock %}
+
+<p><b>Effective new beliefs:</b></p>
+
+{% block eg_new_beliefs %}
+{% endblock %}
+
+<p><b>Effective new behaviours:</b></p>
+
+{% block eg_new_behaviours %}
+{% endblock %}
+
+<hr>

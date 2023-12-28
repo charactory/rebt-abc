@@ -1,6 +1,10 @@
 <section id="examples" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h2>Examples</h2>
 
+
+    <p>{{c.link('parking_fine', "Getting a parking fine")}}</p>
+
+
     <!-- List of example topics
 
     Redundancy
@@ -19,3 +23,7 @@
     <p>
 
 </section>
+
+<section id="parking_fine" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
+    {% include "examples/parking_fine.html" %}
+  </section>
