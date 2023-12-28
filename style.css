@@ -6,6 +6,7 @@
 
 {% include "fonts/libre_baskerville.css" %}
 
+
   .emotable {
     font-size: 0.8rem
   }
@@ -51,7 +52,7 @@
 */
   body {
     font-family: Charter, "Charter BT", 'Bitstream Charter', 'Sitka Text', Cambria, serif;
-    line-height: 1.5;
+    line-height: 1.45;
     color: var(--textcolor);
     background: var(--bgcolor);
     position: relative;
@@ -234,7 +235,7 @@
     /* border: 1px solid var(--textcolor);  */
     padding: 0.9em; 
     display: inline-block; 
-    max-width: 75ch;
+    max-width: 80ch;
   }
 
 
@@ -251,6 +252,7 @@
     padding-left: 2ch;
     margin-top: 0.9em;
     margin-bottom: 0.9em;
+    margin-left: 0.9em;
   }
 
   b,

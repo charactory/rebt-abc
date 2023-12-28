@@ -69,7 +69,7 @@
     <p>Attempt #2: <i>They criticised me last Tuesday when I tried to help with the dishes</i></p>
     {% endcall %}
 
-    <p>This is much better. The unhelpful thoughts are only about that specific moment</p>
+    <p>This is much better. The unhelpful thoughts are only about that specific moment.</p>
 
 
     <h3>
@@ -334,20 +334,20 @@
     <p>
         To identify the rigid belief, or the demand, we can ask:
     </p>
+    {% call c.box() %}
     <p><i>What am I insisting should happen for myself, others, or the situation?</i></p>
-
+    {% endcall %}
     <!-- <p>You might give another adversity as an answer to that. </p> -->
 
 
     <p>Note: use of the word "should" or "must" does not necessarily indicate a problematic demand. Shoulds can be used
         to
         express:</p>
-    <ul>
-        <li>Preference: <i>I should put less sugar in the dough so the cake is not too sweet for me</i></li>
-        <li>Fact</i>: <i>For a fire to start, there should be a source of fuel</i></li>
-    </ul>
-    <p>Shoulds become unhelpful when they express an
-        absolute need for something to happen.
+    {% call c.box() %}
+    <p>Preference: <i>I should put less sugar in the dough so the cake is not too sweet for me</i></p>
+    <p>Fact</i>: <i>For a fire to start, there should be a source of fuel</i></p>
+    {% endcall %}
+    <p>Shoulds become unhelpful when you use them to express an absolute need for something to happen.
     </p>
     {% call c.box() %}
     <p><i>I must always succeed.</i></p>
@@ -418,7 +418,12 @@
         5. Dispute Unhelpful Beliefs
     </h2>
     <p>
-        There are several questions you can use to dispute beliefs:</p>
+        The purpose of disputing our unhelpful beliefs is to weaken our perception that the beliefs are true or correct
+        and open the possibility for an alternative set of beliefs that are more helpful.
+    </p>
+
+    <p>
+        There are three questions you can use to dispute beliefs:</p>
     <p>
     <h3>1. Is it realistic?</h3>
     <p>
@@ -432,7 +437,6 @@
     <p>
     <h3>3. Is it logical?</h3>
     </p>
-
 
     <p>
     <h3>4. Is it in line with my values?</h3>
