@@ -269,6 +269,10 @@
     font-size: 1.2em;
   }
 
+  .references > p {
+    max-width: 80ch;
+  }
+
   hr {
     height: 1px;
     border: 0;
