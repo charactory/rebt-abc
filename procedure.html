@@ -425,6 +425,7 @@
     <p>
         There are three questions you can use to dispute beliefs:</p>
     <p>
+        {% call c.box() %}
     <h3>1. Is it realistic?</h3>
     <p>
         Asking ourselves what is the evidence for our unhelpful belief is how we can challenge how realistic the belief
@@ -454,17 +455,20 @@
         actually providing us with practical value, it would be helpful, not unhelpful.
     </p>
 
+    {% endcall %}
 
+    <p>Two other questions, which are strictly speaking not part of the ABC model, but may help with convincing yourself
+        of the unhelpfulness of your beliefs, are:</p>
+        {% call c.box() %}
     <p>
     <h3>4. Is it in line with my values?</h3>
     </p>
-    <p> Unhelpful beliefs can often be unrealistic when they have been held onto for a long time, long past when they
-        were once helpful to us.</p>
+    <p> </p>
     <p>
     <h3>5. Would I teach this belief to someone I care about?</h3>
     </p>
     <p></p>
-
+    {% endcall %}
     <p>
     <h3>Disputing the Adversity</h3>
     </p>
