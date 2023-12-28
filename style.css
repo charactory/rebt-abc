@@ -261,6 +261,11 @@
     font-size: 1.3rem;
   }
 
+  .emotion_table b {
+      font-weight: 600;
+      font-size: 1.1rem;
+  }
+
   small {
     font-size: .60em;
   }
