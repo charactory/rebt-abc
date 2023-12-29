@@ -272,6 +272,12 @@
     font-size: .60em;
   }
 
+  span.smallcap {
+    /*font-variant: small-caps;*/
+    font-family: "Charter Small Caps", Charter, "Charter BT", 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-size: 0.95em;
+  }
+
   span.newthought {
     /*font-variant: small-caps;*/
     font-family: "Charter Small Caps", Charter, "Charter BT", 'Bitstream Charter', 'Sitka Text', Cambria, serif;
