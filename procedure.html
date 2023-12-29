@@ -14,7 +14,7 @@
     </p>
     <ul>
         <li>form an unhelpful negative emotion</li>
-        <li>subsequently engage in unhelpful behaviours</li>
+        <li>engage in unhelpful behaviours</li>
         <aside><i>Unhelpfulness</i> here is defined as anything that is not in your best interests, harms you or your
             relationships with others.</aside>
         <li>generate unhelpful thoughts that further build on the initial thought we had.</li>
@@ -55,27 +55,27 @@
         It is what a group of impartial observers would agree has happened.</p>
     <p></p>
 
+    <details closed>
+        <summary>See Example</summary>
+        {% call c.box() %}
+        <p>Problem: <i>I'm not getting along with my partner</i></p>
+        <p>Attempt #1 at defining situation: <i>They criticise me all the time</i></p>
+        {% endcall %}
 
-    {% call c.box() %}
-    <p>Example:</p>
-    <p></p>
-    <p>Problem: <i>I'm not getting along with my partner</i></p>
-    <p>Attempt #1 at defining situation: <i>They criticise me all the time</i></p>
-    {% endcall %}
+        <p>This situation is too unclear. Trying to practise ABC with this will quickly expand to many issues whichcan
+            become confusing.</p>
 
-    <p>This situation is too unclear. Trying to practise ABC with this will quickly expand to many issues which
-        makes it harder to challenge thoughts.</p>
+        {% call c.box() %}
+        <p>Attempt #2: <i>They criticised me last Tuesday when I tried to help with the dishes</i></p>
+        {% endcall %}
+        <p>This is much better. The unhelpful thoughts are only about that specific moment.</p>
+    </details>
 
-    {% call c.box() %}
-    <p>Attempt #2: <i>They criticised me last Tuesday when I tried to help with the dishes</i></p>
-    {% endcall %}
-
-    <p>This is much better. The unhelpful thoughts are only about that specific moment.</p>
 
 
     <h3>
         <p>
-            Consider Control & Influence
+            Consider Your Options
         </p>
     </h3>
 
@@ -122,6 +122,8 @@
     <p></p>
     <p>The adversity is usually a subjective opinion, but it can also be an objective fact about what happened.</p>
     <p></p>
+    <details closed>
+        <summary>See Example:</summary>    
     {% call c.box() %}
     <p>Example:</p>
     <p></p>
@@ -129,7 +131,9 @@
     <p>Adversity: <i>I don’t know how I can pay next fortnight’s bills</i></p>
     <p></p>
     {% endcall %}
-    <p>There are usually many possible adversities that can be generated from a situation, so using the same example:</p>
+    
+    <p>There are usually many possible adversities that can be generated from a situation, so using the same example:
+    </p>
     <p></p>
 
     {% call c.box() %}
@@ -138,6 +142,7 @@
     <p><i>My wife is going to be disappointed in me</i></p>
     <p><i>I won't be able to sleep because of this</i></p>
     {% endcall %}
+    </details>
 
     <p></p>
     <p>Different adversities generate different types of unhelpful emotions. It is possible to have multiple unhelpful
@@ -274,8 +279,10 @@
     <p>In practice, this means we can be depressed about getting angry, shameful about being depressed, anxious about
         being jealous, and so on.</p>
 
+        
+    <details closed>
+        <summary>See Example</summary>
     {% call c.box() %}
-    <p>Example of problematic worrying:</p>
     <p>
         <b>Situation</b>: You are anxious
     </p>
@@ -289,6 +296,8 @@
         <b>Consequence</b>: Anxiety continues to worsen
     </p>
     {% endcall %}
+    </details>
+
     <p></p>
     <p>The initial, primary emotion becomes a new situation and corresponding adversity which activates another
         unhelpful belief that leads to the unhelpful negative emotion.</p>
@@ -348,6 +357,8 @@
     {% call c.box() %}
     <p><i>What am I insisting should happen for myself, others, or the situation?</i></p>
     {% endcall %}
+
+    <p>This question is so important that it is worth asking it every time you are dealing with an unhelpful negative emotion.</p>
     <!-- <p>You might give another adversity as an answer to that. </p> -->
 
     <p>Note: use of the word "should" or "must" does not necessarily indicate a problematic demand. Shoulds can be used
@@ -383,35 +394,40 @@
         <li>
             The situation, the world, or the future</li>
     </ol>
-    <p> It might take some time to identify the unhelpful beliefs, and arriving at the evaluation might require
-        asking the question repeatedly. For example:</p>
+    <p> Identifying the evaluation might require asking the question repeatedly, challenging each belief that pops up,
+        to arrive at the most feared scenario. </p>
 
-    {% call c.box() %}
-    <p>
-        I might get fined for not paying a bill.</p>
-    <p>
-        <i>What would then happen?</i>
-    </p>
-    <p>
-        I might have less money in my account.</p>
-    <p>
-        <i>What's the consequence of that?</i>
-    </p>
-    <p>
-        I might not be able to afford something later.</p>
-    <p>
-        <i>What's so bad about that?</i>
-    </p>
-    <p>
-        Then I can't have what I need.</p>
-    <p>
-        <i>And if you can't have what you need, what then?</i>
-    </p>
-    <p>
-        <b>It would be awful and I wouldn't be able to cope without it.</b>
-    </p>
+    <details closed>
+        <summary>See Example</summary>
+        {% call c.box() %}
+        <p>
+            I might get fined for not paying a bill.</p>
+        <p>
+            <i>What would then happen?</i>
+        </p>
+        <p>
+            I might have less money in my account.</p>
+        <p>
+            <i>What's the consequence of that?</i>
+        </p>
+        <p>
+            I might not be able to afford something later.</p>
+        <p>
+            <i>What's so bad about that?</i>
+        </p>
+        <p>
+            Then I can't have what I need.</p>
+        <p>
+            <i>And if you can't have what you need, what then?</i>
+        </p>
+        <p>
+            <b>It would be awful and I wouldn't be able to cope without it.</b>
+        </p>
 
-    {% endcall %}
+        {% endcall %}
+    </details>
+
+
     <p>
         Talking to another person (a trusted friend, a qualified counsellor) can help a lot with figuring out what
         unhelpful beliefs are being activated in the situation.
@@ -436,6 +452,7 @@
     <p>
         There are three questions you can use to dispute beliefs:</p>
     <p>
+
         {% call c.box() %}
     <h3>1. Is it realistic?</h3>
     <p>
@@ -444,17 +461,20 @@
     </p>
     <p>This might involve even going out and gathering evidence for the belief.</p>
 
-    {% call c.box() %}
-    <p>Example 1:</p>
-    <p>Belief: <i>I can't stand being lonely</i></p>
-    <p>Disputation: If you have been lonely in the past and are still here, that means you can actually stand being
-        lonely.</p>
+    <details closed>
+        <summary>See Examples</summary>
+        {% call c.box() %}
+        <p>Belief: <i>I can't stand being lonely</i></p>
+        <p>Disputation: If you have been lonely in the past and are still here, that means you can actually stand being
+            lonely.</p>
 
-    <p></p>
-    <p>Example 2:</p>
-    <p>Belief: <i>I must be as successful as everyone else</i></p>
-    <p>Disputation: What is the evidence that you have to be as successful at everyone else?</p>
-    {% endcall %}
+        <p></p>
+
+        <p>Belief: <i>I must be as successful as everyone else</i></p>
+        <p>Disputation: What is the evidence that you have to be as successful at everyone else?</p>
+        {% endcall %}
+    </details>
+
 
 
     <p>
@@ -467,17 +487,19 @@
         that belief to a demand that it must happen. Just because we want something does not mean it will
         happen; just because we insist that the sun rises in the west does not mean it will.
     </p>
-    {% call c.box() %}
-    <p>Example 3:</p>
-    <p>Belief: <i>My partner must never let me down.</i></p>
-    <p>Disputation: It is understandable why you would not want to be let down by your partner, but does that logically
-        mean you must never be let down by them?</p>
-    <p></p>
-    <p>Example 4:</p>
-    <p>Belief: <i>I need to know I will like enjoy this holiday before I book the trip.</i></p>
-    <p>Disputation: How is it possible to know you will enjoy an experience before you try it?</p>
-    {% endcall %}
+    <details closed>
+        <summary>See Examples</summary>
 
+        {% call c.box() %}
+        <p>Belief: <i>My partner must never let me down.</i></p>
+        <p>Disputation: It is understandable why you would not want to be let down by your partner, but does that
+            logically
+            mean you must never be let down by them?</p>
+        <p></p>
+        <p>Belief: <i>I need to know I will like enjoy this holiday before I book the trip.</i></p>
+        <p>Disputation: How is it possible to know you will enjoy an experience before you try it?</p>
+        {% endcall %}
+    </details>
 
 
     <p>
@@ -488,18 +510,19 @@
         Challenging the practical value of our unhelpful beliefs is effective because if the unhelpful belief was
         actually providing us with practical value, it would be helpful, not unhelpful.
     </p>
+    <details closed>
+        <summary>See Examples</summary>
 
-    {% call c.box() %}
-    <p>Example 5:</p>
-    <p>Belief: <i>It's so awful that my friends don't call.</i></p>
-    <p>Disputation: How does this belief help you with connecting you with your friends? Does it lead you to want to
-        talk to them more?</p>
+        {% call c.box() %}
+        <p>Belief: <i>It's so awful that my friends don't call.</i></p>
+        <p>Disputation: How does this belief help you with connecting you with your friends? Does it lead you to want to
+            talk to them more?</p>
 
-    <p></p>
-    <p>Example 6:</p>
-    <p>Belief: <i>I am a failure because I cannot get a job</i></p>
-    <p>Disputation: Is calling yourself a failure helping you to get a job?</p>
-    {% endcall %}
+        <p></p>
+        <p>Belief: <i>I am a failure because I cannot get a job</i></p>
+        <p>Disputation: Is calling yourself a failure helping you to get a job?</p>
+        {% endcall %}
+    </details>
 
     {% endcall %}
 
