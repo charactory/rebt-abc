@@ -353,15 +353,24 @@
     {% endcall %}
 
     <p>This question is so important that it is worth asking it every time you are dealing with an unhelpful negative
-        emotion. The presence of the words <i>should</i>, <i>must</i>, <i>need</i> or <i>have to</i> suggest the presence of a demand.</p>
+        emotion. The presence of the words <i>should</i>, <i>must</i>, <i>need</i> or <i>have to</i> suggest the
+        presence of a demand.</p>
+
+    <details closed>
+        <summary>see example</summary>
+
+        {% call c.box() %}
+        <p>Situation: You get asked a question by your manager that you do not know the answer for<br />
+            Adversity: <i>My manager will think I am incompetent because I don't know</i><br/>
+            Demand: <i>Other people must think I am competent at my job</i></p>
+        {% endcall %}
+    </details>
     <!-- <p>You might give another adversity as an answer to that. </p> -->
 
-    <p>That said, the use of the word <i>should</i>, <i>must</i> or similar does not necessarily indicate a problematic demand. Shoulds can be used
-        to
-        express:</p>
+    <p>The exceptions to that are when shoulds/musts are used to express:</p>
     {% call c.box() %}
-    <p>Preference: <i>I should put less sugar in the dough so the cake is not too sweet for me</i></p>
-    <p>Fact: <i>For a fire to start, there should be a source of fuel</i></p>
+    <p>Preference — <i>I should put less sugar in the dough so the cake is not too sweet for me</i></p>
+    <p>Fact — <i>For a fire to start, there should be a source of fuel</i></p>
     {% endcall %}
     <p>Shoulds become unhelpful when you use them to express an absolute need for something to happen.
     </p>
@@ -452,21 +461,20 @@
         {% call c.box() %}
     <h3>1. Is it realistic?</h3>
     <p>
-        Asking ourselves what is the evidence for our unhelpful belief is how we can challenge how realistic the belief
-        is.
+        We can challenge how realistic our beliefs are by asking if we have evidence for the beliefs.
     </p>
-    <p>This might involve even going out and gathering evidence for the belief.</p>
+    <!-- <p>This might involve even going out and gathering evidence for the belief.</p> -->
 
     <details closed>
         <summary>see examples</summary>
         {% call c.box() %}
-        <p>Belief: <i>I must be as successful as everyone else</i></p>
-        <p>Disputation: What is the evidence that I have to be as successful at everyone else?</p>
+        <p>Belief: <i>I must be as successful as everyone else</i><br/>
+        Disputation: What is the evidence that I have to be as successful at everyone else?</p>
 
         <p></p>
 
-        <p>Belief: <i>I can't stand being lonely</i></p>
-        <p>Disputation: If I have been lonely in the past and I am still here, that means I can actually stand being
+        <p>Belief: <i>I can't stand being lonely</i><br/>
+        Disputation: If I have been lonely in the past and I am still here, that means I can actually stand being
             lonely.</p>
 
         {% endcall %}
@@ -488,13 +496,13 @@
         <summary>see examples</summary>
 
         {% call c.box() %}
-        <p>Belief: <i>My partner must never let me down.</i></p>
-        <p>Disputation: It is understandable why I don't want to be let down by my partner, but does that
+        <p>Belief: <i>My partner must never let me down.</i><br/>
+        Disputation: It is understandable why I don't want to be let down by my partner, but does that
             logically
             mean I must never be let down by them?</p>
         <p></p>
-        <p>Belief: <i>I need to know I will like enjoy this holiday before I book the trip.</i></p>
-        <p>Disputation: How is it possible to know I will enjoy an experience before I try it?</p>
+        <p>Belief: <i>I need to know I will like enjoy this holiday before I book the trip.</i><br/>
+        Disputation: How is it possible to know I will enjoy an experience before I try it?</p>
         {% endcall %}
     </details>
 
@@ -511,13 +519,13 @@
         <summary>see examples</summary>
 
         {% call c.box() %}
-        <p>Belief: <i>It's so awful that my friends don't call.</i></p>
-        <p>Disputation: How does this belief help me with connecting you with my friends? Does it lead me to want to
+        <p>Belief: <i>It's so awful that my friends don't call.</i><br/>
+        Disputation: How does this belief help me with connecting you with my friends? Does it lead me to want to
             talk to them more?</p>
 
         <p></p>
-        <p>Belief: <i>I am a failure because I cannot get a job</i></p>
-        <p>Disputation: Is calling myself a failure helping me to get a job?</p>
+        <p>Belief: <i>I am a failure because I cannot get a job</i><br/>
+        Disputation: Is calling myself a failure helping me to get a job?</p>
         {% endcall %}
     </details>
 
