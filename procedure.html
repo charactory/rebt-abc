@@ -58,15 +58,15 @@
     <details closed>
         <summary>see example</summary>
         {% call c.box() %}
-        <p>Problem: <i>I'm not getting along with my partner</i></p>
-        <p>Attempt #1 at defining situation: <i>They criticise me all the time</i></p>
+        <p><small>Problem</small>: <i>I'm not getting along with my partner</i></p>
+        <p><small>Situation #1</small>: <i>They criticise me all the time</i></p>
         {% endcall %}
 
         <p>This situation is too unclear. Trying to practise ABC with this will quickly expand to many issues which can
             become confusing.</p>
 
         {% call c.box() %}
-        <p>Attempt #2: <i>They criticised me last Tuesday when I tried to help with the dishes</i></p>
+        <p><small>Situation #2</small>: <i>They criticised me last Tuesday when I tried to help with the dishes</i></p>
         {% endcall %}
         <p>This is much better. The unhelpful thoughts are only about that specific moment.</p>
     </details>
@@ -126,8 +126,8 @@
     <details closed>
         <summary>see example</summary>
         {% call c.box() %}
-        <p>Situation: <i>I lost my job.</i></p>
-        <p>Adversity: <i>I don’t know how I can pay next fortnight’s bills</i></p>
+        <p><small>Situation</small>: <i>I lost my job.</i></p>
+        <p><small>Adversity</small>: <i>I don’t know how I can pay next fortnight’s bills</i></p>
         <p></p>
         {% endcall %}
 
@@ -300,6 +300,11 @@
         if it liberates you to focus on the primary emotion more effectively.</p>
 
     <h3>
+        Identify unhelpful behaviours and thoughts
+    </h3>
+
+
+    <h3>
         <p>
             Set a goal for the problem
         </p>
@@ -335,8 +340,12 @@
         <li>and if the expectation is not met, we would suffer an insurmountable negative outcome (extreme)
         </li>
     </ul>
-    <p>
-        See {{c.link('beliefs', "Beliefs")}} for more information on rigid and extreme beliefs.</p>
+    <p>Unhelpful beliefs are extreme in at least one out of three characteristics:</p>
+    <ul>
+        <li>{{c.link('awfulizing', "Awfulizing")}}</li>
+        <li>{{c.link('discomfort_intolerance', "Discomfort intolerance")}}</li>
+        <li>{{c.link('global_evaluation', "Global evaluation of worth")}}</li>
+    </ul>
 
     <h3>Identifying the demand</h3>
 
@@ -353,21 +362,21 @@
     {% endcall %}
 
     <p>This question is so important that it is worth asking it every time you are dealing with an unhelpful negative
-        emotion. The presence of the words <i>should</i>, <i>must</i>, <i>need</i> or <i>have to</i> suggest the
+        emotion. The words <i>should</i>, <i>must</i>, <i>need</i> or <i>have to</i> suggest the
         presence of a demand.</p>
 
     <details closed>
         <summary>see example</summary>
 
         {% call c.box() %}
-        <p>Situation: You get asked a question by your manager that you do not know the answer for<br />
-            Adversity: <i>My manager will think I am incompetent because I don't know</i><br/>
-            Demand: <i>Other people must think I am competent at my job</i></p>
+        <p><small>Situation</small>: You get asked a question by your manager that you do not know the answer for<br />
+            <small>Adversity</small>: <i>My manager will think I am incompetent because I don't know</i><br />
+            <small>Demand</small>: <i>Other people must think I am competent at my job</i></p>
         {% endcall %}
     </details>
     <!-- <p>You might give another adversity as an answer to that. </p> -->
 
-    <p>The exceptions to that are when shoulds/musts are used to express:</p>
+    <p>That said, there are exceptions to this. The exceptions to that are when shoulds/musts are used to express:</p>
     {% call c.box() %}
     <p>Preference — <i>I should put less sugar in the dough so the cake is not too sweet for me</i></p>
     <p>Fact — <i>For a fire to start, there should be a source of fuel</i></p>
@@ -404,14 +413,14 @@
     <details closed>
         <summary>see example</summary>
         {% call c.box() %}
-        <p>Situation: I forgot to pay a bill</p>
+        <p><small>Situation</small>: I forgot to pay a bill</p>
         <p>
-            Adversity: <i>I might get fined for not paying a bill.</i></p>
+            <small>Adversity</small>: <i>I might get fined for not paying a bill.</i></p>
         <p>
-            Question: What would then happen?
+            <small>Question</small>: What would then happen?
         </p>
         <p>
-            Answer: <i>I might have less money in my account.</i></p>
+            <small>Answer</small>: <i>I might have less money in my account.</i></p>
         <p>
             Q: What's the consequence of that?
         </p>
@@ -468,13 +477,13 @@
     <details closed>
         <summary>see examples</summary>
         {% call c.box() %}
-        <p>Belief: <i>I must be as successful as everyone else</i><br/>
-        Disputation: What is the evidence that I have to be as successful at everyone else?</p>
+        <p><small>Belief</small>: <i>I must be as successful as everyone else</i><br />
+            <small>Disputation</small>: What is the evidence that I have to be as successful at everyone else?</p>
 
         <p></p>
 
-        <p>Belief: <i>I can't stand being lonely</i><br/>
-        Disputation: If I have been lonely in the past and I am still here, that means I can actually stand being
+        <p><small>Belief</small>: <i>I can't stand being lonely</i><br />
+            <small>Disputation</small>: If I have been lonely in the past and I am still here, that means I can actually stand being
             lonely.</p>
 
         {% endcall %}
@@ -496,13 +505,13 @@
         <summary>see examples</summary>
 
         {% call c.box() %}
-        <p>Belief: <i>My partner must never let me down.</i><br/>
-        Disputation: It is understandable why I don't want to be let down by my partner, but does that
+        <p><small>Belief</small>: <i>My partner must never let me down.</i><br />
+            Disputation: It is understandable why I don't want to be let down by my partner, but does that
             logically
             mean I must never be let down by them?</p>
         <p></p>
-        <p>Belief: <i>I need to know I will like enjoy this holiday before I book the trip.</i><br/>
-        Disputation: How is it possible to know I will enjoy an experience before I try it?</p>
+        <p><small>Belief</small>: <i>I need to know I will like enjoy this holiday before I book the trip.</i><br />
+            Disputation: How is it possible to know I will enjoy an experience before I try it?</p>
         {% endcall %}
     </details>
 
@@ -519,13 +528,13 @@
         <summary>see examples</summary>
 
         {% call c.box() %}
-        <p>Belief: <i>It's so awful that my friends don't call.</i><br/>
-        Disputation: How does this belief help me with connecting you with my friends? Does it lead me to want to
+        <p><small>Belief</small>: <i>It's so awful that my friends don't call.</i><br />
+            <small>Disputation</small>: How does this belief help me with connecting me with my friends? Does it lead me to want to
             talk to them more?</p>
 
         <p></p>
-        <p>Belief: <i>I am a failure because I cannot get a job</i><br/>
-        Disputation: Is calling myself a failure helping me to get a job?</p>
+        <p><small>Belief</small>: <i>I am a failure because I cannot get a job</i><br />
+            <small>Disputation</small>: Is calling myself a failure helping me to get a job?</p>
         {% endcall %}
     </details>
 
@@ -568,9 +577,9 @@
         <summary>see example</summary>
 
         {% call c.box() %}
-        <p>Situation: <i>A co-worker frowned at me as I walked past him</i></p>
-        <p>Adversity: <i>They don't like me</i></p>
-        <p>Disputation: How can I be sure they don't like me? Is there another possible reason why they are frowning
+        <p><small>Situation</small>: <i>A co-worker frowned at me as I walked past him</i><br/>
+        <small>Adversity</small>: <i>They don't like me</i><br/>
+        <small>Disputation</small>: How can I be sure they don't like me? Is there another possible reason why they are frowning
             that has nothing to do with me?</p>
         {% endcall %}
     </details>
