@@ -51,7 +51,7 @@
         what you were thinking and feeling at the time.
     </p>
 
-    <p>We call this specific instance the <i>situation</i>. We define it as the objective account of what is going on.
+    <p>This specific instance is the <i>situation</i>. We define it as the objective account of what is going on.
         It is what a group of impartial observers would agree has happened.</p>
     <p></p>
 
@@ -75,13 +75,13 @@
 
     <h3>
         <p>
-            Consider Your Options
+            Consider what you can control or influence
         </p>
     </h3>
 
 
     <p>
-        Before looking at the ABC model, consider your options:
+        Before looking at the ABC model, consider all your options:
     </p>
     {% call c.box() %}
     <p>
@@ -162,20 +162,12 @@
 <section id="step3" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h2>3. Identify Consequences</h2>
 
-    <p>
-        Consequences in the ABC model refer to the negative effect of your beliefs about the adversity. This effect can
-        be made up of thoughts, emotions and behaviours.
-    </p>
-
-    <h3>
-        <p>
-            Unhelpful Negative Emotions
-        </p>
-    </h3>
+    <p>List out the thoughts, emotions and behaviours that occurred when you had this adversity. This is referred to as
+        the <i>consequences</i> in the ABC model.
 
     <p>
-        Review this list of common unhelpful negative emotions and see if any of them match your experience:
-    </p>
+        To help identify your unhelpful negative emotions, review this list and click on their names to learn more about
+        them. </p>
 
     <!--
     <table style="border: 1px solid var(--textcolor); background-color: var(--bgcolor); padding: 0.3em; display: inline-block; margin-bottom: 0.8rem;">
@@ -185,10 +177,10 @@
         <tbody>
             <tr>
                 <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
-                    <p><b>Emotion</b></p>
+                    <p><small>Emotion</small></p>
                 </td>
                 <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
-                    <p><b>Cause</b></p>
+                    <p><small>Cause</small></p>
                 </td>
             </tr>
 
@@ -300,11 +292,6 @@
         if it liberates you to focus on the primary emotion more effectively.</p>
 
     <h3>
-        Identify unhelpful behaviours and thoughts
-    </h3>
-
-
-    <h3>
         <p>
             Set a goal for the problem
         </p>
@@ -333,19 +320,30 @@
     <p>
         Unhelpful beliefs are unhelpful because they are rigid and extreme.
     </p>
-    <p>
-        When we have rigid and extreme beliefs, we are insisting:</p>
-    <ul>
-        <li> that our expectations must be met regardless of what the reality is (rigid)</li>
-        <li>and if the expectation is not met, we would suffer an insurmountable negative outcome (extreme)
-        </li>
-    </ul>
+
+    <p>Rigid beliefs, or demands, occur when we insist our expectations be met regardless of reality.</p>
+
+    {% call c.box() %}
+    <p><small>example</small>:</p>
+    <p><i>I must always succeed.</i><br/>
+    <i>Others should never let me down.</i><br/>
+    <i>The world should be predictable.</i></p>
+    {% endcall %}
+
+
     <p>Unhelpful beliefs are extreme in at least one out of three characteristics:</p>
     <ul>
-        <li>{{c.link('awfulizing', "Awfulizing")}}</li>
-        <li>{{c.link('discomfort_intolerance', "Discomfort intolerance")}}</li>
-        <li>{{c.link('global_evaluation', "Global evaluation of worth")}}</li>
+        <li>Awfulizing — telling ourselves an adversity is awful, terrible, or completely
+            bad</li>
+        <li>Discomfort intolerance — describing an adversity as intolerable or
+            unable to be coped with</li>
+        <li>Global evaluation of worth — judging ourselves, others or a situation as
+            wholly negative/worthless based on one aspect</li>
     </ul>
+<p></p>
+
+    <p>When put together, an unhelpful belief takes the following form:</p>
+    {% include "unhelpfulbelief.html" %}
 
     <h3>Identifying the demand</h3>
 
@@ -371,7 +369,8 @@
         {% call c.box() %}
         <p><small>Situation</small>: You get asked a question by your manager that you do not know the answer for<br />
             <small>Adversity</small>: <i>My manager will think I am incompetent because I don't know</i><br />
-            <small>Demand</small>: <i>Other people must think I am competent at my job</i></p>
+            <small>Demand</small>: <i>Other people must think I am competent at my job</i>
+        </p>
         {% endcall %}
     </details>
     <!-- <p>You might give another adversity as an answer to that. </p> -->
@@ -383,11 +382,7 @@
     {% endcall %}
     <p>Shoulds become unhelpful when you use them to express an absolute need for something to happen.
     </p>
-    {% call c.box() %}
-    <p><i>I must always succeed.</i></p>
-    <p><i>Others should never let me down.</i></p>
-    <p><i>Life should be fair.</i></p>
-    {% endcall %}
+
 
     <h3>Identifying the evaluation</h3>
 
@@ -415,12 +410,14 @@
         {% call c.box() %}
         <p><small>Situation</small>: I forgot to pay a bill</p>
         <p>
-            <small>Adversity</small>: <i>I might get fined for not paying a bill.</i></p>
+            <small>Adversity</small>: <i>I might get fined for not paying a bill.</i>
+        </p>
         <p>
             <small>Question</small>: What would then happen?
         </p>
         <p>
-            <small>Answer</small>: <i>I might have less money in my account.</i></p>
+            <small>Answer</small>: <i>I might have less money in my account.</i>
+        </p>
         <p>
             Q: What's the consequence of that?
         </p>
@@ -470,7 +467,7 @@
         {% call c.box() %}
     <h3>1. Is it realistic?</h3>
     <p>
-        We can challenge how realistic our beliefs are by asking if we have evidence for the beliefs.
+        We can challenge how realistic our beliefs are by asking if we have evidence for them.
     </p>
     <!-- <p>This might involve even going out and gathering evidence for the belief.</p> -->
 
@@ -478,13 +475,16 @@
         <summary>see examples</summary>
         {% call c.box() %}
         <p><small>Belief</small>: <i>I must be as successful as everyone else</i><br />
-            <small>Disputation</small>: What is the evidence that I have to be as successful at everyone else?</p>
+            <small>Disputation</small>: What is the evidence that I have to be as successful at everyone else?
+        </p>
 
         <p></p>
 
         <p><small>Belief</small>: <i>I can't stand being lonely</i><br />
-            <small>Disputation</small>: If I have been lonely in the past and I am still here, that means I can actually stand being
-            lonely.</p>
+            <small>Disputation</small>: If I have been lonely in the past and I am still here, that means I can actually
+            stand being
+            lonely.
+        </p>
 
         {% endcall %}
     </details>
@@ -529,12 +529,15 @@
 
         {% call c.box() %}
         <p><small>Belief</small>: <i>It's so awful that my friends don't call.</i><br />
-            <small>Disputation</small>: How does this belief help me with connecting me with my friends? Does it lead me to want to
-            talk to them more?</p>
+            <small>Disputation</small>: How does this belief help me with connecting me with my friends? Does it lead me
+            to want to
+            talk to them more?
+        </p>
 
         <p></p>
         <p><small>Belief</small>: <i>I am a failure because I cannot get a job</i><br />
-            <small>Disputation</small>: Is calling myself a failure helping me to get a job?</p>
+            <small>Disputation</small>: Is calling myself a failure helping me to get a job?
+        </p>
         {% endcall %}
     </details>
 
@@ -577,10 +580,12 @@
         <summary>see example</summary>
 
         {% call c.box() %}
-        <p><small>Situation</small>: <i>A co-worker frowned at me as I walked past him</i><br/>
-        <small>Adversity</small>: <i>They don't like me</i><br/>
-        <small>Disputation</small>: How can I be sure they don't like me? Is there another possible reason why they are frowning
-            that has nothing to do with me?</p>
+        <p><small>Situation</small>: <i>A co-worker frowned at me as I walked past him</i><br />
+            <small>Adversity</small>: <i>They don't like me</i><br />
+            <small>Disputation</small>: How can I be sure they don't like me? Is there another possible reason why they
+            are frowning
+            that has nothing to do with me?
+        </p>
         {% endcall %}
     </details>
 
