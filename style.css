@@ -185,9 +185,7 @@
     margin-bottom: .9em;
   }
 
-  .emotion_table p,
-  ul,
-  ol {
+  .emotion_table p {
     font-size: 1.1rem;
     line-height: 1.5rem;
     max-width: 65ch;
