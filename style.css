@@ -193,6 +193,16 @@
     margin-bottom: .6em;
   }
 
+  .emotion_table ul {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    max-width: 65ch;
+    text-align: left;
+    margin-bottom: .6em;
+
+  }
+
+
   section>ul {
     font-size: 1.4rem;
     line-height: 2rem;
