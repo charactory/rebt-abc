@@ -469,7 +469,6 @@
   .w3-sidebar {
     height: 100%;
     width: 325px;
-    padding-right: 0.5rem;
     background-color: #fff;
     position: fixed !important;
     z-index: 1;

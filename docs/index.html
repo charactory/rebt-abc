@@ -39,7 +39,11 @@
   html {
     font-size: 14px;
     --light: #F0EEED;
+    --light-for-dark-mode: #D9D7D7;
     --lightgrey: #D7D7D7;
+    --mediumgrey: #676767;
+    --mediumbluegrey: #5C626B;
+    --darkgrey: #272727;
     --dark: #101010;
     --a-green: #095D42;
     --b-blue: #3581B8;
@@ -48,6 +52,8 @@
     --b-maroon: #C92C6D;
     --link-ochre-day: #675f4c;
     --link-ochre-night: #898270;
+    --sidebar-grey: var(--lightgrey);
+    --linkcolor: var(--link-ochre-day);
   }
 
   * {
@@ -63,14 +69,27 @@
 
   }
 
-  /*
-@media (prefers-color-scheme: dark) {
-  * {
-    --textcolor: var(--light);
-    --bgcolor: var(--dark);
+  @media (prefers-color-scheme: light) {
+    * {
+      --textcolor: var(--dark);
+      --bgcolor: var(--light);
+      --sidebar-grey: var(--lightgrey);
+      --sidebar-text-grey: var(--mediumgrey);
+      --linkcolor: var(--link-ochre-day);
+    }
   }
-}
-*/
+  
+  
+/* @media (prefers-color-scheme: dark) {
+  * {
+    --textcolor: var(--light-for-dark-mode);
+    --bgcolor: var(--dark);
+    --sidebar-grey: var(--darkgrey);
+    --sidebar-text-grey: var(--mediumbluegrey);
+    --linkcolor: var(--link-ochre-night);
+  }
+} */
+
   body {
     font-family: Charter, "Charter BT", 'Bitstream Charter', 'Sitka Text', Cambria, serif;
     line-height: 1.45;
@@ -104,8 +123,18 @@
     padding-left:1rem;
   }
 
+  nav a:not(:last-of-type) {
+    margin-right: 1.5vw;
+  }
+
+  nav>p {
+    font-size: 1.2rem;
+    color: var(--sidebar-text-grey);
+  }
+
+
   .sidebar_link a {
-    color: var(--textcolor);
+    /* color: var(--light); */
   }
 
   section:target {
@@ -137,17 +166,10 @@
     padding: 0 3vw .5em 0;
   }
 
-  nav a:not(:last-of-type) {
-    margin-right: 1.5vw;
-  }
-
-  nav>p {
-    font-size: 1.2rem;
-  }
 
   aside {
     padding-left: 0.3rem;
-    border-left: solid 1px var(--lightgrey);
+    border-left: solid 1px var(--sidebar-grey);
     font-size: 0.9rem;
     position: absolute;
     right: -160px;
@@ -158,7 +180,9 @@
 
   a {
     text-decoration: none;
-    color: var(--link-ochre-day);
+    /* color: var(--b-maroon); */
+
+    color: var(--linkcolor);
     border-bottom: 1px solid;
   }
 
@@ -987,12 +1011,16 @@
 
   <header>
 
-    <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="background-color: var(--lightgrey);"
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="background-color: var(--sidebar-grey);"
       id="mySidebar">
       <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
         style="font-size: 1.5rem; margin-bottom: 2rem; left: -9px; top: -5px;" id="closeButton"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" class="ionicon" viewBox="0 0 512 512">
 <path fill="none" stroke="var(--textcolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/>
 </svg></button> <!--🌓-->
+
+        <button class="w3-button w3-xlarge w3-hide-large" onclick="night_mode()"
+        style="left:75px; top: 0px;" id="closeButton"><svg xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" class="ionicon" viewBox="0 0 512 512"><circle cx="256" cy="256" r="208" fill="none" stroke="var(--dark)" stroke-linejoin="round" stroke-width="32"/><path d="M256 464c-114.88 0-208-93.12-208-208S141.12 48 256 48z"/></svg></button>
+
       <div id="buttonSpaceFiller" style="height: 90px; width: 317.5px; display: none"></div>
 
       <nav class="sidebar_link">
@@ -2785,6 +2813,10 @@ envy
         document.getElementById("openButton").style.display = "block";
         document.getElementById("buttonSpaceFiller").style.display = "none";
       };
+    }
+
+    function night_mode() {
+
     }
 
     // function hide_home(page) {
