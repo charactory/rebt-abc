@@ -54,6 +54,7 @@
     --link-ochre-night: #898270;
     --sidebar-grey: var(--lightgrey);
     --linkcolor: var(--link-ochre-day);
+    --sidebar-text-grey: var(--mediumgrey);
   }
 
   * {
@@ -110,7 +111,7 @@
     position: absolute;
     top: 0;
     margin-left: 325px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     background: var(--bgcolor);
   }
@@ -1130,11 +1131,12 @@
       <hr>
 
       <div class="emotion_table">
-        <p>Note: This website does not collect any personal information.<br />
+        <p style="color: var(--sidebar-text-grey);">Note: This website does not collect any personal information.<br />
           The examples described are hypothetical and merely to illustrate use of the model.<br />
           This tool is not a replacement for professional help and is intended for educational
           purposes. Please obtain professional help for further clarification on how the ABC model is applicable
-          for your situation.
+          for your situation.<br/>
+          © 2024 Colin Gan
       </div>
       </p>
     </section>
@@ -1142,7 +1144,7 @@
     <section id="5minutes" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
 
     <h2>The ABC model in 5 minutes</h2>
-    <ol>
+    <ol style="margin-left:0px;">
         <li>Think of a problem that is affecting you</li>
         <li>Think of a specific time the problem was an issue for you</li>
         <li>Do anything that can be done (control or influence) about the problem</li>
@@ -2724,7 +2726,7 @@ envy
     
     
     <section id="about" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
-    <h2>About This Tool</h2>
+    <h2>About this tool</h2>
     <p>
         The ABC model presented here is based on Rational Emotive Behaviour Therapy (REBT), which is a member of a
         larger family of psychotherapies known as Cognitive Behavioural Therapy (CBT).

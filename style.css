@@ -33,6 +33,7 @@
     --link-ochre-night: #898270;
     --sidebar-grey: var(--lightgrey);
     --linkcolor: var(--link-ochre-day);
+    --sidebar-text-grey: var(--mediumgrey);
   }
 
   * {
@@ -89,7 +90,7 @@
     position: absolute;
     top: 0;
     margin-left: 325px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     background: var(--bgcolor);
   }
