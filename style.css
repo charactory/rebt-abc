@@ -18,8 +18,10 @@
   html {
     font-size: 14px;
     --light: #F0EEED;
+    --light-for-dark-mode: #D9D7D7;
     --lightgrey: #D7D7D7;
     --mediumgrey: #676767;
+    --mediumbluegrey: #5C626B;
     --darkgrey: #272727;
     --dark: #101010;
     --a-green: #095D42;
@@ -56,16 +58,15 @@
   }
   
   
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   * {
-    --textcolor: var(--light);
+    --textcolor: var(--light-for-dark-mode);
     --bgcolor: var(--dark);
     --sidebar-grey: var(--darkgrey);
-    --sidebar-text-grey: var(--mediumgrey);
+    --sidebar-text-grey: var(--mediumbluegrey);
     --linkcolor: var(--link-ochre-night);
-
   }
-}
+} */
 
   body {
     font-family: Charter, "Charter BT", 'Bitstream Charter', 'Sitka Text', Cambria, serif;
