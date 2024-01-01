@@ -493,7 +493,8 @@
     background-color: #fff;
     position: fixed !important;
     z-index: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   section,
@@ -1016,10 +1017,6 @@
         style="font-size: 1.5rem; margin-bottom: 2rem; left: -9px; top: -5px;" id="closeButton"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" class="ionicon" viewBox="0 0 512 512">
 <path fill="none" stroke="var(--textcolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/>
 </svg></button> <!--🌓-->
-
-        <!-- <button class="w3-button w3-xlarge w3-hide-large" onclick="night_mode()"
-        style="left:75px; top: 0px;" id="closeButton"><svg xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" class="ionicon" viewBox="0 0 512 512"><circle cx="256" cy="256" r="208" fill="none" stroke="var(--dark)" stroke-linejoin="round" stroke-width="32"/><path d="M256 464c-114.88 0-208-93.12-208-208S141.12 48 256 48z"/></svg></button> -->
-
       <div id="buttonSpaceFiller" style="height: 90px; width: 317.5px; display: none"></div>
 
       <nav class="sidebar_link">
@@ -1034,43 +1031,43 @@
   <a href="#5minutes" onclick="w3_close()">ABC model in 5 minutes</a>
 
         </p>
-        <p style="margin-top:0.4rem">
+        <p style="margin-top:0.4rem; margin-bottom:0.5rem;">
           
   <a href="#intro" onclick="w3_close()">What is the ABC model?</a>
 
         </p>
         <hr>
 
-        <p>
+        <p style="margin-top:0.05rem; margin-bottom:0.5rem;">
           1. 
   <a href="#step1" onclick="w3_close()">Define the problem</a>
 
         </p>
-        <p style="margin-top:0.2rem">
+        <p style="margin-top:0.05rem; margin-bottom:0.5rem;">
           2. 
   <a href="#step2" onclick="w3_close()">Define the adversity</a>
 
         </p>
 
-        <p style="margin-top:0.2rem">
+        <p style="margin-top:0.05rem; margin-bottom:0.5rem;">
           3. 
   <a href="#step3" onclick="w3_close()">Identify consequences</a>
 
         </p>
 
-        <p style="margin-top:0.2rem">
+        <p style="margin-top:0.05rem; margin-bottom:0.5rem;">
           4. 
   <a href="#step4" onclick="w3_close()">Identify unhelpful beliefs</a>
 
         </p>
 
-        <p style="margin-top:0.2rem">
+        <p style="margin-top:0.05rem; margin-bottom:0.5rem;">
           5. 
   <a href="#step5" onclick="w3_close()">Dispute unhelpful beliefs</a>
 
         </p>
 
-        <p style="margin-top:0.2rem">
+        <p style="margin-top:0.05rem; margin-bottom:0.5rem;">
           6. 
   <a href="#step6" onclick="w3_close()">Create helpful new beliefs</a>
 
@@ -2812,10 +2809,6 @@ envy
         document.getElementById("openButton").style.display = "block";
         document.getElementById("buttonSpaceFiller").style.display = "none";
       };
-    }
-
-    function night_mode() {
-
     }
 
     // function hide_home(page) {

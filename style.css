@@ -472,7 +472,8 @@
     background-color: #fff;
     position: fixed !important;
     z-index: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   section,
