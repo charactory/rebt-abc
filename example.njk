@@ -1,21 +1,19 @@
-<h2>Example: {% block eg_title %}{% endblock %}</h2>
+<h2>Example:
+    {% block eg_title %}{% endblock %}
+</h2>
 <span class="emotion_table">
-<p><b>Problem:</b>
-{% block eg_problem %}
-{% endblock %}
-<p>
-
-<p><b>Situation:</b>
-{% block eg_situation %}
-{% endblock %}
-<p>
-
-<p><b>Control/Influence:</b>
-{% block eg_control_influence %}
-{% endblock %}
-</p>
-
-{% block content %}
-{% endblock %}
-</span>
-<hr>
+    <p>
+        <b>Problem:</b>
+        {% block eg_problem %}{% endblock %}
+        <p>
+            <p>
+                <b>Situation:</b>
+                {% block eg_situation %}{% endblock %}
+                <p>
+                    <p>
+                        <b>Control/Influence:</b>
+                        {% block eg_control_influence %}{% endblock %}
+                    </p>
+                    {% block content %}{% endblock %}
+                </span>
+                <hr>

@@ -1,37 +1,33 @@
 {% macro link(name, value='', type='text') %}
-  <a href="#{{name}}" onclick="w3_close()">{{value}}</a>
+  <a href="#{{ name }}" onclick="w3_close()">{{ value }}</a>
 {% endmacro %}
-
 {% macro box() %}
   <div class="box">
-    {{caller()}}
+    {{ caller() }}
   </div>
 {% endmacro %}
-
-
-
 {% macro question_box() %}
-  <div style="border: 1px solid var(--textcolor); background-color: var(--c-pink); padding: 0.3em; display: inline-block; margin-bottom: 0.2rem;">
-    {{caller()}}
+  <div style="border: 1px solid var(--textcolor); background-color: var(--c-pink); padding: 0.3em; display: inline-block;
+      margin-bottom: 0.2rem;">
+    {{ caller() }}
   </div>
 {% endmacro %}
-
-
-
 {% macro et(value='', type='text') %}
   <span class="emotable">
     <table>
       <tbody style="border:1px solid white; padding: 0.4em">
-        {{value}}
+        {{ value }}
       </tbody>
     </table>
   </span>
 {% endmacro %}
-
 {% macro hidestep(name, value='', type='text') %}
-<h2>
-  <a href="javascript:;" onClick="if (document.getElementById('{{name}}').style.display=='block'){document.getElementById('{{name}}').style.display='none'} else {document.getElementById('{{name}}').style.display='block'};">
-    {{value}}
-  </a>
-</h2>
+  <h2>
+    <a
+      href="javascript:;"
+      onClick="if (document.getElementById('{{ name }}').style.display=='block'){document.getElementById('{{ name
+        }}').style.display='none'} else {document.getElementById('{{ name }}').style.display='block'};">
+      {{ value }}
+    </a>
+  </h2>
 {% endmacro %}

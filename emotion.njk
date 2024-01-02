@@ -1,49 +1,35 @@
-{% set emo %}{% block emo_name %}{% endblock %}{% endset %}
-
+{% set emo %}
+{% block emo_name %}{% endblock %}
+{% endset %}
 <p>
-<h2>{{emo}}</h2>
+    <h2>{{ emo }}</h2>
 </p>
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Situations typically associated with {{emo | lower}}</h3>
+            <h3>Situations typically associated with {{ emo | lower }}</h3>
         </p>
-
-        {% block emo_a %}
-        {% endblock %}
-
+        {% block emo_a %}{% endblock %}
     </div>
-
-
     <div>
         <p>
-        <h3>Adversities that can trigger {{emo | lower}}</h3>
+            <h3>Adversities that can trigger {{ emo | lower }}</h3>
         </p>
-
-        {% block emo_eg %}
-        {% endblock %}
-
+        {% block emo_eg %}{% endblock %}
     </div>
-
 </div>
-
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Unhelpful behaviours associated with {{emo | lower}}</h3>
+            <h3>Unhelpful behaviours associated with {{ emo | lower }}</h3>
         </p>
-        {% block emo_behaviours %}
-        {% endblock %}
+        {% block emo_behaviours %}{% endblock %}
     </div>
     <div>
         <p>
-        <h3>Subsequent thoughts that typically occur in response to {{emo | lower}}</h3>
+            <h3>Subsequent thoughts that typically occur in response to {{ emo | lower }}</h3>
         </p>
-        {% block emo_thoughts %}
-        {% endblock %}
+        {% block emo_thoughts %}{% endblock %}
     </div>
 </div>
-
 <hr>
