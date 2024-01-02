@@ -36,7 +36,7 @@
     font-size: 1rem
   }
 
-  html {
+  :root {
     font-size: 14px;
     --light: #F0EEED;
     --light-for-dark-mode: #D9D7D7;
@@ -52,9 +52,31 @@
     --b-maroon: #C92C6D;
     --link-ochre-day: #675f4c;
     --link-ochre-night: #898270;
+
+    --bgcolor: #F0EEED;
+    --textcolor: #101010;
+    --linkcolor: #675f4c;
     --sidebar-grey: var(--lightgrey);
-    --linkcolor: var(--link-ochre-day);
     --sidebar-text-grey: var(--mediumgrey);
+
+  }
+
+
+  html[data-theme='light'] {
+    --bgcolor: #F0EEED;
+    --textcolor: #101010;
+    --linkcolor: #675f4c;
+    --sidebar-grey: var(--lightgrey);
+    --sidebar-text-grey: var(--mediumgrey);
+  }
+
+html[data-theme='dark'] {
+    --bgcolor: #171717;
+    --textcolor: #D9D7D7;
+    --linkcolor: #86817D;
+    --sidebar-grey: var(--darkgrey);
+    --sidebar-text-grey: #646464;
+
   }
 
   * {
@@ -64,13 +86,13 @@
 
     /* Color scheme */
 
-    --textcolor: var(--dark);
-    --bgcolor: var(--light);
+    /* --textcolor: var(--dark);
+    --bgcolor: var(--light); */
     /*--highlight: #2749c9;*/
 
   }
 
-  @media (prefers-color-scheme: light) {
+  /* @media (prefers-color-scheme: light) {
     * {
       --textcolor: var(--dark);
       --bgcolor: var(--light);
@@ -78,7 +100,7 @@
       --sidebar-text-grey: var(--mediumgrey);
       --linkcolor: var(--link-ochre-day);
     }
-  }
+  } */
   
   
 /* @media (prefers-color-scheme: dark) {
@@ -220,7 +242,7 @@ nav a {
 
   section>h3 {
     font-size: 1.4em;
-    max-width: 60ch;
+    max-width: 55ch;
     font-weight: 600;
     margin: 1.9em 0 .8em 0;
   }
@@ -234,7 +256,7 @@ nav a {
   summary {
     font-size: 1.4rem;
     line-height: 2rem;
-    max-width: 60ch;
+    max-width: 55ch;
     /* Limit line-length to 60 characters */
     margin-bottom: .9em;
   }
@@ -242,7 +264,7 @@ nav a {
   .emotion_table p {
     font-size: 1.1rem;
     line-height: 1.5rem;
-    max-width: 65ch;
+    max-width: 60ch;
     text-align: left;
     margin-bottom: .6em;
   }
@@ -250,7 +272,7 @@ nav a {
   .emotion_table ul {
     font-size: 1.1rem;
     line-height: 1.5rem;
-    max-width: 65ch;
+    max-width: 60ch;
     text-align: left;
     margin-bottom: .6em;
 
@@ -260,20 +282,20 @@ nav a {
   section>ul {
     font-size: 1.4rem;
     line-height: 2rem;
-    max-width: 60ch;
+    max-width: 55ch;
   }
 
   section> ol {
     font-size: 1.4rem;
     line-height: 2rem;
-    max-width: 60ch;
+    max-width: 55ch;
   }
 
 
   .emotion_table h3 {
     font-size: 1.3rem;
     line-height: 1.5rem;
-    max-width: 65ch;
+    max-width: 60h;
     margin-bottom: .6em;
   }
 
@@ -284,7 +306,7 @@ nav a {
     column-rule: 1px solid var(--textcolor);
     background-color: var(--bgcolor);
     grid-template-columns: repeat(2, 1fr);
-    max-width: 75ch;
+    max-width: 70ch;
     grid-gap: 0.5rem;
     margin-top: 0.5rem;
     margin-bottom: 1.2rem;
@@ -353,7 +375,7 @@ nav a {
   }
 
   .references > p {
-    max-width: 80ch;
+    max-width: 75ch;
   }
 
   hr {
@@ -362,7 +384,7 @@ nav a {
     background: var(--textcolor);
     margin: 2.5em 0 1.5em 0;
     opacity: 0.3;
-    max-width: 85ch;
+    max-width: 80ch;
   }
 
 
@@ -898,8 +920,7 @@ nav a {
 
   <header>
 
-    <div class="w3-sidebar w3-collapse shadow" style="background-color: var(--sidebar-grey);"
-      id="mySidebar">
+    <div class="w3-sidebar w3-collapse shadow" style="background-color: var(--sidebar-grey);" id="mySidebar">
       <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
         style="font-size: 1.5rem; margin-bottom: 2rem; left: -9px; top: -5px;" id="closeButton"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" class="ionicon" viewBox="0 0 512 512">
 <path fill="none" stroke="var(--textcolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/>
@@ -1021,7 +1042,7 @@ nav a {
           The examples described are hypothetical and merely to illustrate use of the model.<br />
           This tool is not a replacement for professional help and is intended for educational
           purposes. Please obtain professional help for further clarification on how the ABC model is applicable
-          for your situation.<br/>
+          for your situation.<br />
           © 2024 Colin Gan
       </div>
       </p>
@@ -1085,9 +1106,10 @@ nav a {
     </p>
     <ul>
         <li>form an unhelpful negative emotion</li>
-        <li>engage in unhelpful behaviours <aside><i>Unhelpfulness</i> here is defined as anything that is not in your
+        <li>engage in unhelpful behaviours 
+            <!-- <aside><i>Unhelpfulness</i> here is defined as anything that is not in your
                 best interests, harms you or your
-                relationships with others.</aside>
+                relationships with others.</aside> -->
         </li>
         <li>generate unhelpful thoughts that further build on the initial thought we had.</li>
     </ul>
@@ -1481,10 +1503,9 @@ nav a {
     <li>it would be <i>awful</i></li>
     <li>it would be <i>intolerable</i></li>
     <li>it would mean I am/others are/the situation is <i>completely bad/a failure/useless</i>.</li>
-</ul> 
+</ul>
 
 </div>
-
 
     <h3>Identifying the demand</h3>
 
@@ -1560,9 +1581,8 @@ nav a {
   </div>
 
 
-    <p> <i>Discomfort intolerance</i> occurs when a person states that cannot tolerate something uncomfortable or that
-        they
-        cannot be happy with the presence of the intolerable thing.</p>
+    <p> <i>Discomfort intolerance</i> occurs when a person states that they cannot tolerate something uncomfortable or that
+        they cannot be happy with the presence of the intolerable thing.</p>
     <p></p>
     <p>This can be unhelpful because it can become a self-fulfilling prophecy: by believing you cannot stand something,
         you will likely develop unhelpful feelings (anxiety or anger are common) about yourself or others in a
@@ -1578,8 +1598,8 @@ nav a {
   </div>
 
 
-    <p> <i>Global negative evaluation</i> occurs when we make a single negative evaluation of themselves, others or the
-        world, and use it to judge the whole person or situation as completely defective.</p>
+    <p> <i>Global negative evaluation</i> is relying on a single negative evaluation of ourselves, others or the
+        world, and to judge the whole person or situation as completely defective.</p>
     
   <div class="box">
     
@@ -1790,7 +1810,7 @@ nav a {
   </div>
 
     <p>
-    <h3>Disputing the Adversity</h3>
+    <h3>Disputing the adversity</h3>
     </p>
     <p>
         Once the demands and any evaluations have been disputed, it is worth examining the evidence for the adversity
@@ -1908,7 +1928,7 @@ nav a {
         when we have failed at something, but never use that to judge that we are failures.</p>
     <p></p>
 
-    <h3>Template of a Helpful Belief</h3>
+    <h3>Template of a helpful belief</h3>
 
     <p>Here is a template of a helpful belief to aid with constructing your own:</p>
 
@@ -2023,621 +2043,602 @@ nav a {
 
 <section id="depression" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
   
-
 <p>
-<h2>
-Depression
+    <h2>
+
+    Depression
+
 </h2>
 </p>
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Situations typically associated with 
-depression
+            <h3>Situations typically associated with 
+
+    depression
+
 </h3>
         </p>
-
         
-<p>Loss or failure in two domains: relationships and/or achievement/status</p>
-<p>Relationships: loss of loved one, end of a relationship, rejection, disapproval by others</p>
-<p>Achievement/status: failing at an important goal, experiencing loss of freedom</p>
-
+    <p>Loss or failure in two domains: relationships and/or achievement/status</p>
+    <p>Relationships: loss of loved one, end of a relationship, rejection, disapproval by others</p>
+    <p>Achievement/status: failing at an important goal, experiencing loss of freedom</p>
 
     </div>
-
-
     <div>
         <p>
-        <h3>Adversities that can trigger 
-depression
+            <h3>Adversities that can trigger 
+
+    depression
+
 </h3>
         </p>
-
         
-<p>You believe that you need this relationship or achievement or else you are unlovable/worthless</p>
-<p>You believe that you need this relationship or achievement or else it would be unbearable</p>
-
+    <p>You believe that you need this relationship or achievement or else you are unlovable/worthless</p>
+    <p>You believe that you need this relationship or achievement or else it would be unbearable</p>
 
     </div>
-
 </div>
-
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Unhelpful behaviours associated with 
-depression
+            <h3>Unhelpful behaviours associated with 
+
+    depression
+
 </h3>
         </p>
         
-<p>You withdraw from others</p>
-<p>You use self-destructive means to stop being depressed (eg. alcohol, drugs)</p>
-<p>You stop engaging in usual activities because you lack motivation or energy</p>
-<p>You push away attempts by others to comfort you</p>
-<p>You become overly dependent on and seek to cling to others</p>
+    <p>You withdraw from others</p>
+    <p>You use self-destructive means to stop being depressed (eg. alcohol, drugs)</p>
+    <p>You stop engaging in usual activities because you lack motivation or energy</p>
+    <p>You push away attempts by others to comfort you</p>
+    <p>You become overly dependent on and seek to cling to others</p>
 
     </div>
     <div>
         <p>
-        <h3>Subsequent thoughts that typically occur in response to 
-depression
+            <h3>Subsequent thoughts that typically occur in response to 
+
+    depression
+
 </h3>
         </p>
         
-<p>You ignore positive aspects of the loss and only focus on the negatives</p>
-<p>You generalise the loss and believe you will experience loss/failure in other parts of your life</p>
-<p>You ruminate about what caused the depression and its consequences</p>
-<p>You believe things will not improve in the future (hopelessness)</p>
-<p>You believe you are unable to help yourself (helplessness)</p>
+    <p>You ignore positive aspects of the loss and only focus on the negatives</p>
+    <p>You generalise the loss and believe you will experience loss/failure in other parts of your life</p>
+    <p>You ruminate about what caused the depression and its consequences</p>
+    <p>You believe things will not improve in the future (hopelessness)</p>
+    <p>You believe you are unable to help yourself (helplessness)</p>
 
     </div>
 </div>
-
 <hr>
 </section>
 
 <section id="anxiety" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
   
-
 <p>
-<h2>
-Anxiety
+    <h2>
+
+    Anxiety
+
 </h2>
 </p>
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Situations typically associated with 
-anxiety
+            <h3>Situations typically associated with 
+
+    anxiety
+
 </h3>
         </p>
-
         
-<p>Expecting a threat in the future, which could be:</p>
-<ul>
-<li>Physical threat (illness, assault)</li>
-<li>Loss of status amongst your peers</li>
-<li>Loss of possessions or relationships</li>
-<li>The sensation of anxiety itself</li>
-</ul>
-
+    <p>Expecting a threat in the future, which could be:</p>
+    <ul>
+        <li>Physical threat (illness, assault)</li>
+        <li>Loss of status amongst your peers</li>
+        <li>Loss of possessions or relationships</li>
+        <li>The sensation of anxiety itself</li>
+    </ul>
 
     </div>
-
-
     <div>
         <p>
-        <h3>Adversities that can trigger 
-anxiety
+            <h3>Adversities that can trigger 
+
+    anxiety
+
 </h3>
         </p>
-
         
-<p>You expect you or loved ones might die or get hurt</p>
-<p>You think someone might reject or criticise you</p>
-<p>You believe you might embarrass yourself</p>
-
+    <p>You expect you or loved ones might die or get hurt</p>
+    <p>You think someone might reject or criticise you</p>
+    <p>You believe you might embarrass yourself</p>
 
     </div>
-
 </div>
-
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Unhelpful behaviours associated with 
-anxiety
+            <h3>Unhelpful behaviours associated with 
+
+    anxiety
+
 </h3>
         </p>
         
-<p>You avoid the perceived threat by:</p>
-<p>Physically avoiding the threat</p>
-<p>Carrying out superstitious behaviour to ward off threat</p>
-<p>Using distractions to avoid thinking about threat</p>
+    <p>You avoid the perceived threat by:</p>
+    <p>Physically avoiding the threat</p>
+    <p>Carrying out superstitious behaviour to ward off threat</p>
+    <p>Using distractions to avoid thinking about threat</p>
 
     </div>
     <div>
         <p>
-        <h3>Subsequent thoughts that typically occur in response to 
-anxiety
+            <h3>Subsequent thoughts that typically occur in response to 
+
+    anxiety
+
 </h3>
         </p>
         
-<p>You ruminate about other threats</p>
-<p>You overestimate probability of threat occurring</p>
-<p>You underestimate your ability to cope with threat</p>
+    <p>You ruminate about other threats</p>
+    <p>You overestimate probability of threat occurring</p>
+    <p>You underestimate your ability to cope with threat</p>
 
     </div>
 </div>
-
 <hr>
 </section>
 
 <section id="anger" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
   
-
 <p>
-<h2>
-Anger
+    <h2>
+
+    Anger
+
 </h2>
 </p>
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Situations typically associated with 
-anger
+            <h3>Situations typically associated with 
+
+    anger
+
 </h3>
         </p>
-
         
-<p>Loss of status/respect</p>
-<p>Prevented from meeting an important goal</p>
-<p>Physical/emotional pain</p>
-<p>Ruminating over past event that caused anger</p>
-
+    <p>Loss of status/respect</p>
+    <p>Prevented from meeting an important goal</p>
+    <p>Physical/emotional pain</p>
+    <p>Ruminating over past event that caused anger</p>
 
     </div>
-
-
     <div>
         <p>
-        <h3>Adversities that can trigger 
-anger
+            <h3>Adversities that can trigger 
+
+    anger
+
 </h3>
         </p>
-
         
-<p>You believe that you have been unfairly treated</p>
-<p>You believe that things should not be this way</p>
-<p>You believe that you are absolutely right</p>
-<p>You judge a situation as illegitimate or wrong</p>
-
+    <p>You believe that you have been unfairly treated</p>
+    <p>You believe that things should not be this way</p>
+    <p>You believe that you are absolutely right</p>
+    <p>You judge a situation as illegitimate or wrong</p>
 
     </div>
-
 </div>
-
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Unhelpful behaviours associated with 
-anger
+            <h3>Unhelpful behaviours associated with 
+
+    anger
+
 </h3>
         </p>
         
-<p>You attacking others physically/verbally</p>
-<p>You target something else (person/animal/object) other than the person concerned</p>
-<p>You withdrawing aggressively from a situation</p>
+    <p>You attacking others physically/verbally</p>
+    <p>You target something else (person/animal/object) other than the person concerned</p>
+    <p>You withdrawing aggressively from a situation</p>
 
     </div>
     <div>
         <p>
-        <h3>Subsequent thoughts that typically occur in response to 
-anger
+            <h3>Subsequent thoughts that typically occur in response to 
+
+    anger
+
 </h3>
         </p>
         
-<p>You view malicious intent in the actions of others in the situation</p>
-<p>You focus your attention only on aspects of a situation that lead to anger</p>
-<p>You continue to ruminate about the cause of anger</p>
-<p>You imagine possible future events that could lead to anger again</p>
+    <p>You view malicious intent in the actions of others in the situation</p>
+    <p>You focus your attention only on aspects of a situation that lead to anger</p>
+    <p>You continue to ruminate about the cause of anger</p>
+    <p>You imagine possible future events that could lead to anger again</p>
 
     </div>
 </div>
-
 <hr>
 </section>
 
 <section id="hurt" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
   
-
 <p>
-<h2>
-Hurt
+    <h2>
+
+    Hurt
+
 </h2>
 </p>
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Situations typically associated with 
-hurt
+            <h3>Situations typically associated with 
+
+    hurt
+
 </h3>
         </p>
-
         
-<p>You have been rejected by someone</p>
-<p>You have been betrayed by someone</p>
-<p>You have been neglected by others</p>
-<p>You have been the target of inappropriate humour or spiteful teasing by someone</p>
-<p>You learn that someone does not value your relationship with them to be as close as you thought</p>
-
+    <p>You have been rejected by someone</p>
+    <p>You have been betrayed by someone</p>
+    <p>You have been neglected by others</p>
+    <p>You have been the target of inappropriate humour or spiteful teasing by someone</p>
+    <p>You learn that someone does not value your relationship with them to be as close as you thought</p>
 
     </div>
-
-
     <div>
         <p>
-        <h3>Adversities that can trigger 
-hurt
+            <h3>Adversities that can trigger 
+
+    hurt
+
 </h3>
         </p>
-
         
-<p>You think you deserve to be treated better by the other person</p>
-<p>You think the other person does not care about you</p>
-<p>You see yourself as vulnerable to harm in the relationship</p>
-
+    <p>You think you deserve to be treated better by the other person</p>
+    <p>You think the other person does not care about you</p>
+    <p>You see yourself as vulnerable to harm in the relationship</p>
 
     </div>
-
 </div>
-
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Unhelpful behaviours associated with 
-hurt
+            <h3>Unhelpful behaviours associated with 
+
+    hurt
+
 </h3>
         </p>
         
-<p>You sulk and make it obvious you are hurt without revealing source of the hurt</p>
-<p>You indirectly criticize or punish the other person for the hurt</p>
+    <p>You sulk and make it obvious you are hurt without revealing source of the hurt</p>
+    <p>You indirectly criticize or punish the other person for the hurt</p>
 
     </div>
     <div>
         <p>
-        <h3>Subsequent thoughts that typically occur in response to 
-hurt
+            <h3>Subsequent thoughts that typically occur in response to 
+
+    hurt
+
 </h3>
         </p>
         
-<p>You expect the other person to make the first move to mend the relationship</p>
-<p>You see yourself as alone and uncared for</p>
-<p>You ruminate over past experience of being hurt</p>
-<p>You think that your efforts in the relationship were all for nothing</p>
-
+    <p>You expect the other person to make the first move to mend the relationship</p>
+    <p>You see yourself as alone and uncared for</p>
+    <p>You ruminate over past experience of being hurt</p>
+    <p>You think that your efforts in the relationship were all for nothing</p>
 
     </div>
 </div>
-
 <hr>
 </section>
 
 <section id="shame" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
   
-
 <p>
-<h2>
-Shame
+    <h2>
+
+    Shame
+
 </h2>
 </p>
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Situations typically associated with 
-shame
+            <h3>Situations typically associated with 
+
+    shame
+
 </h3>
         </p>
-
         
-<p>You are ridiculed/laughed at by others</p>
-<p>You are criticised in public</p>
-<p>You fail at something you expect to be competent at</p>
-<p>You are rejected by people you care about</p>
-<p>You do or think something that people you admire believe is wrong or immoral</p>
-<p>A vulnerable aspect of yourself has been exposed to others</p>
-<p>You perceive yourself as failing to meet a standard met by others</p>
-
+    <p>You are ridiculed/laughed at by others</p>
+    <p>You are criticised in public</p>
+    <p>You fail at something you expect to be competent at</p>
+    <p>You are rejected by people you care about</p>
+    <p>You do or think something that people you admire believe is wrong or immoral</p>
+    <p>A vulnerable aspect of yourself has been exposed to others</p>
+    <p>You perceive yourself as failing to meet a standard met by others</p>
 
     </div>
-
-
     <div>
         <p>
-        <h3>Adversities that can trigger 
-shame
+            <h3>Adversities that can trigger 
+
+    shame
+
 </h3>
         </p>
-
         
-<p>You believe others will reject you</p>
-<p>You view yourself as a failure or defective compared to others</p>
-<p>You think you are unlovable</p>
-<p>You believe you are ugly</p>
-
+    <p>You believe others will reject you</p>
+    <p>You view yourself as a failure or defective compared to others</p>
+    <p>You think you are unlovable</p>
+    <p>You believe you are ugly</p>
 
     </div>
-
 </div>
-
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Unhelpful behaviours associated with 
-shame
+            <h3>Unhelpful behaviours associated with 
+
+    shame
+
 </h3>
         </p>
         
-<p>You avoid being around others</p>
-<p>You try to distract yourself from shame by engaging in impulsive actions or attacking/blaming others</p>
+    <p>You avoid being around others</p>
+    <p>You try to distract yourself from shame by engaging in impulsive actions or attacking/blaming others</p>
 
     </div>
     <div>
         <p>
-        <h3>Subsequent thoughts that typically occur in response to 
-shame
+            <h3>Subsequent thoughts that typically occur in response to 
+
+    shame
+
 </h3>
         </p>
         
-<p>You overestimate the likelihood that others will notice your flaws</p>
-<p>You overestimate the amount of judgment you expect from others for knowing about your flaws</p>
+    <p>You overestimate the likelihood that others will notice your flaws</p>
+    <p>You overestimate the amount of judgment you expect from others for knowing about your flaws</p>
 
     </div>
 </div>
-
 <hr>
 </section>
 
 <section id="guilt" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
   
-
 <p>
-<h2>
-Guilt
+    <h2>
+
+    Guilt
+
 </h2>
 </p>
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Situations typically associated with 
-guilt
+            <h3>Situations typically associated with 
+
+    guilt
+
 </h3>
         </p>
-
         
-<p>You do something you consider to be morally wrong</p>
-<p>You cause harm to others or yourself</p>
-<p>You do not do something you agreed to</p>
-<p>You are reminded of past actions associated with guilt</p>
-
+    <p>You do something you consider to be morally wrong</p>
+    <p>You cause harm to others or yourself</p>
+    <p>You do not do something you agreed to</p>
+    <p>You are reminded of past actions associated with guilt</p>
 
     </div>
-
-
     <div>
         <p>
-        <h3>Adversities that can trigger 
-guilt
+            <h3>Adversities that can trigger 
+
+    guilt
+
 </h3>
         </p>
-
         
-<p>You have the thought “If only I had done things differently…”</p>
-
+    <p>You have the thought “If only I had done things differently…”</p>
 
     </div>
-
 </div>
-
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Unhelpful behaviours associated with 
-guilt
+            <h3>Unhelpful behaviours associated with 
+
+    guilt
+
 </h3>
         </p>
         
-<p>You beg forgiveness from those you wronged</p>
-<p>You reject offers of forgiveness</p>
-<p>You make excuses for your guilty actions</p>
-<p>You punish yourself</p>
+    <p>You beg forgiveness from those you wronged</p>
+    <p>You reject offers of forgiveness</p>
+    <p>You make excuses for your guilty actions</p>
+    <p>You punish yourself</p>
 
     </div>
     <div>
         <p>
-        <h3>Subsequent thoughts that typically occur in response to 
-guilt
+            <h3>Subsequent thoughts that typically occur in response to 
+
+    guilt
+
 </h3>
         </p>
         
-<p>You think you will receive retribution</p>
-<p>You take more responsibility for the guilt act than is warranted</p>
-
+    <p>You think you will receive retribution</p>
+    <p>You take more responsibility for the guilt act than is warranted</p>
 
     </div>
 </div>
-
 <hr>
 </section>
 
 <section id="jealousy" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
   
-
 <p>
-<h2>
-Jealousy
+    <h2>
+
+    Jealousy
+
 </h2>
 </p>
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Situations typically associated with 
-jealousy
+            <h3>Situations typically associated with 
+
+    jealousy
+
 </h3>
         </p>
-
         
-<p>An important relationship is being threatened by another person paying attention to your partner.</p>
-<p>Partner is having an affair</p>
-<p>Partner flirts with others</p>
-<p>Partner says they want more time alone</p>
-
+    <p>An important relationship is being threatened by another person paying attention to your partner.</p>
+    <p>Partner is having an affair</p>
+    <p>Partner flirts with others</p>
+    <p>Partner says they want more time alone</p>
 
     </div>
-
-
     <div>
         <p>
-        <h3>Adversities that can trigger 
-jealousy
+            <h3>Adversities that can trigger 
+
+    jealousy
+
 </h3>
         </p>
-
         
-<p>You think your partner doesn’t care about you</p>
-<p>You think your partner is going to leave you</p>
-<p>You think your partner is behaving inappropriately</p>
-<p>You believe you deserve to get more out of your relationship</p>
-<p>You believe you’re not the most important person in my partner’s life</p>
-
+    <p>You think your partner doesn’t care about you</p>
+    <p>You think your partner is going to leave you</p>
+    <p>You think your partner is behaving inappropriately</p>
+    <p>You believe you deserve to get more out of your relationship</p>
+    <p>You believe you’re not the most important person in my partner’s life</p>
 
     </div>
-
 </div>
-
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Unhelpful behaviours associated with 
-jealousy
+            <h3>Unhelpful behaviours associated with 
+
+    jealousy
+
 </h3>
         </p>
         
-<p>You try to control your partner who you are afraid of losing</p>
-<p>You accuse your partner of being unfaithful</p>
-<p>You monitor your partner’s behaviour closely</p>
-<p>You cling to your partner</p>
-<p>You constantly seek reassurance about status of your relationship</p>
-<p>You make threats or engage in violent behaviour towards anyone threatening your relationship</p>
+    <p>You try to control your partner who you are afraid of losing</p>
+    <p>You accuse your partner of being unfaithful</p>
+    <p>You monitor your partner’s behaviour closely</p>
+    <p>You cling to your partner</p>
+    <p>You constantly seek reassurance about status of your relationship</p>
+    <p>You make threats or engage in violent behaviour towards anyone threatening your relationship</p>
 
     </div>
     <div>
         <p>
-        <h3>Subsequent thoughts that typically occur in response to 
-jealousy
+            <h3>Subsequent thoughts that typically occur in response to 
+
+    jealousy
+
 </h3>
         </p>
         
-<p>You view other people as potential love rivals</p>
-<p>You believe that your partner has a negative attitude towards you</p>
-
+    <p>You view other people as potential love rivals</p>
+    <p>You believe that your partner has a negative attitude towards you</p>
 
     </div>
 </div>
-
 <hr>
 </section>
 
 <section id="envy" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
   
-
 <p>
-<h2>
-Envy
+    <h2>
+
+    Envy
+
 </h2>
 </p>
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Situations typically associated with 
-envy
+            <h3>Situations typically associated with 
+
+    envy
+
 </h3>
         </p>
-
         
-<p>Someone has something you want/need but cannot have</p>
-
+    <p>Someone has something you want/need but cannot have</p>
 
     </div>
-
-
     <div>
         <p>
-        <h3>Adversities that can trigger 
-envy
+            <h3>Adversities that can trigger 
+
+    envy
+
 </h3>
         </p>
-
         
-<p>You think you deserve what others have</p>
-<p>You think others have more than you</p>
-<p>You think that the world is unfair because you do not have something others have</p>
-<p>You think you are a failure in comparison to others</p>
-<p>You think other people are judging you because someone has done better</p>
-
+    <p>You think you deserve what others have</p>
+    <p>You think others have more than you</p>
+    <p>You think that the world is unfair because you do not have something others have</p>
+    <p>You think you are a failure in comparison to others</p>
+    <p>You think other people are judging you because someone has done better</p>
 
     </div>
-
 </div>
-
-
 <div class="emotion_table">
     <div>
         <p>
-        <h3>Unhelpful behaviours associated with 
-envy
+            <h3>Unhelpful behaviours associated with 
+
+    envy
+
 </h3>
         </p>
         
-<p>You try to make the other person look bad</p>
-<p>You attack/criticise those who have what you want</p>
-<p>You avoid people who have what you want</p>
+    <p>You try to make the other person look bad</p>
+    <p>You attack/criticise those who have what you want</p>
+    <p>You avoid people who have what you want</p>
 
     </div>
     <div>
         <p>
-        <h3>Subsequent thoughts that typically occur in response to 
-envy
+            <h3>Subsequent thoughts that typically occur in response to 
+
+    envy
+
 </h3>
         </p>
         
-<p>Focusing on what you do not have</p>
-<p>Not appreciating what you already have</p>
-<p>You think others are better than you</p>
-<p>You think you are unlucky</p>
-<p>You overidealize people who are successful</p>
-<p>You overgeneralize the success of the person you envy</p>
-<p>You overgeneralize your failure relative to the person you envy</p>
-<p>You believe you will not improve because someone else is doing better</p>
+    <p>Focusing on what you do not have</p>
+    <p>Not appreciating what you already have</p>
+    <p>You think others are better than you</p>
+    <p>You think you are unlucky</p>
+    <p>You overidealize people who are successful</p>
+    <p>You overgeneralize the success of the person you envy</p>
+    <p>You overgeneralize your failure relative to the person you envy</p>
+    <p>You believe you will not improve because someone else is doing better</p>
 
     </div>
 </div>
-
 <hr>
   
 </section>
@@ -2721,6 +2722,27 @@ envy
         document.getElementById("buttonSpaceFiller").style.display = "none";
       };
     }
+
+
+    var toggle = document.getElementById("theme-toggle");
+
+    var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    if (storedTheme)
+      document.documentElement.setAttribute('data-theme', storedTheme)
+
+
+    toggle.onclick = function () {
+      var currentTheme = document.documentElement.getAttribute("data-theme");
+      var targetTheme = "light";
+
+      if (currentTheme === "light") {
+        targetTheme = "dark";
+      }
+
+      document.documentElement.setAttribute('data-theme', targetTheme)
+      localStorage.setItem('theme', targetTheme);
+    };
+
 
     // function hide_home(page) {
     //   if (page === "home") {
