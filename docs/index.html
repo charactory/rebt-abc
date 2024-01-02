@@ -133,10 +133,18 @@
     color: var(--sidebar-text-grey);
   }
 
+  nav hr {
+    max-width: 35ch;
+}
 
-  .sidebar_link a {
-    /* color: var(--light); */
-  }
+nav a {
+  border-bottom: 0px solid;
+}
+
+
+  /* .sidebar_link a {
+    color: var(--light);
+  } */
 
   section:target {
     /* Show section */
@@ -173,8 +181,8 @@
     border-left: solid 1px var(--sidebar-grey);
     font-size: 0.9rem;
     position: absolute;
-    right: -160px;
-    width: 288px;
+    right: -125px;
+    width: 300px;
   }
 
   /* ------- General ------- */
@@ -490,7 +498,7 @@
 
   .w3-sidebar {
     height: 100%;
-    width: 325px;
+    width: 300px;
     background-color: #fff;
     position: fixed !important;
     z-index: 1;
@@ -767,22 +775,6 @@
     -ms-transform: translate(-50%, 0%)
   }
 
-  .w3-display-container:hover .w3-display-hover {
-    display: block
-  }
-
-  .w3-display-container:hover span.w3-display-hover {
-    display: inline-block
-  }
-
-  .w3-display-hover {
-    display: none
-  }
-
-  .w3-display-position {
-    position: absolute
-  }
-
   .w3-container,
   .w3-panel {
     padding: 0.01em 16px
@@ -1018,7 +1010,7 @@
         style="font-size: 1.5rem; margin-bottom: 2rem; left: -9px; top: -5px;" id="closeButton"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" class="ionicon" viewBox="0 0 512 512">
 <path fill="none" stroke="var(--textcolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/>
 </svg></button> <!--🌓-->
-      <div id="buttonSpaceFiller" style="height: 90px; width: 317.5px; display: none"></div>
+      <div id="buttonSpaceFiller" style="height: 90px; width: 300px; display: none"></div>
 
       <nav class="sidebar_link">
         <p>
@@ -1124,7 +1116,7 @@
         thoughts to improve how we feel,
         think and act.
       </p>
-      <p> Read 
+      <p> Read now: 
   <a href="#5minutes" onclick="w3_close()">the ABC model in 5 minutes</a>
 </p>
       <p></p>
@@ -1147,7 +1139,7 @@
     <ol style="margin-left:0px;">
         <li>Think of a problem that is affecting you</li>
         <li>Think of a specific time the problem was an issue for you</li>
-        <li>Do anything that can be done (control or influence) about the problem</li>
+        <li>Do anything that can be done about the problem</li>
         <li>Define the situation (what objectively happened in that specific time)</li>
         <li>Define the adversity (what was your subjective take-away or conclusion from the situation)</li>
         <li>List the consequences for you due to the adversity:
@@ -1207,8 +1199,8 @@
     </ul>
 
     <p>Whenever we experience an emotion in a situation, it is because we are telling ourselves something about the
-        situation. The situation itself does not directly cause us to feel a certain way; it is always the thoughts
-        about the situation that does.
+        situation. The situation itself does not directly cause us to feel a certain way. Feelings or emotions are
+        always indirectly caused by our thoughts about the situation.
     </p>
     <p>Whatever emotions you are experiencing at any time, as distressing as they may be, are completely valid for you
         to feel. You can acknowledge this right now and work at challenging your unhelpful thoughts underlying those
@@ -2728,8 +2720,8 @@ envy
     <section id="about" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h2>About this tool</h2>
     <p>
-        The ABC model presented here is based on Rational Emotive Behaviour Therapy (REBT), which is a member of a
-        larger family of psychotherapies known as Cognitive Behavioural Therapy (CBT).
+        The ABC model presented here is based on Rational Emotive Behaviour Therapy (REBT), which is a type of Cognitive
+        Behavioural Therapy (CBT).
     </p>
     <p>
         See 
