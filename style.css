@@ -113,8 +113,8 @@
   }
 
   nav hr {
-    max-width: 35ch;
-}
+    max-width: 30ch;
+} 
 
 nav a {
   border-bottom: 0px solid;
@@ -512,10 +512,6 @@ nav a {
     white-space: normal
   }
 
-  .w3-bar-block.w3-center .w3-bar-item {
-    text-align: center
-  }
-
   .w3-block {
     display: block;
     width: 100%
@@ -658,70 +654,6 @@ nav a {
     z-index: 2
   }
 
-  .w3-display-topleft {
-    position: absolute;
-    left: 0;
-    top: 0
-  }
-
-  .w3-display-topright {
-    position: absolute;
-    right: 0;
-    top: 0
-  }
-
-  .w3-display-bottomleft {
-    position: absolute;
-    left: 0;
-    bottom: 0
-  }
-
-  .w3-display-bottomright {
-    position: absolute;
-    right: 0;
-    bottom: 0
-  }
-
-  .w3-display-middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
-
-  .w3-display-left {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(-0%, -50%)
-  }
-
-  .w3-display-right {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%)
-  }
-
-  .w3-display-topmiddle {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%)
-  }
-
-  .w3-display-bottommiddle {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%)
-  }
-
   .w3-container,
   .w3-panel {
     padding: 0.01em 16px
@@ -732,14 +664,8 @@ nav a {
     margin-bottom: 16px
   }
 
-  .w3-card,
-  .w3-card-2 {
+  .shadow {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
-  }
-
-  .w3-card-4,
-  .w3-hover-shadow:hover {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
   }
 
   .w3-spin {

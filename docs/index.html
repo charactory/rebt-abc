@@ -134,8 +134,8 @@
   }
 
   nav hr {
-    max-width: 35ch;
-}
+    max-width: 30ch;
+} 
 
 nav a {
   border-bottom: 0px solid;
@@ -533,10 +533,6 @@ nav a {
     white-space: normal
   }
 
-  .w3-bar-block.w3-center .w3-bar-item {
-    text-align: center
-  }
-
   .w3-block {
     display: block;
     width: 100%
@@ -679,70 +675,6 @@ nav a {
     z-index: 2
   }
 
-  .w3-display-topleft {
-    position: absolute;
-    left: 0;
-    top: 0
-  }
-
-  .w3-display-topright {
-    position: absolute;
-    right: 0;
-    top: 0
-  }
-
-  .w3-display-bottomleft {
-    position: absolute;
-    left: 0;
-    bottom: 0
-  }
-
-  .w3-display-bottomright {
-    position: absolute;
-    right: 0;
-    bottom: 0
-  }
-
-  .w3-display-middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
-
-  .w3-display-left {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(-0%, -50%)
-  }
-
-  .w3-display-right {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%)
-  }
-
-  .w3-display-topmiddle {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%)
-  }
-
-  .w3-display-bottommiddle {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%)
-  }
-
   .w3-container,
   .w3-panel {
     padding: 0.01em 16px
@@ -753,14 +685,8 @@ nav a {
     margin-bottom: 16px
   }
 
-  .w3-card,
-  .w3-card-2 {
+  .shadow {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
-  }
-
-  .w3-card-4,
-  .w3-hover-shadow:hover {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
   }
 
   .w3-spin {
@@ -972,7 +898,7 @@ nav a {
 
   <header>
 
-    <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="background-color: var(--sidebar-grey);"
+    <div class="w3-sidebar w3-collapse shadow" style="background-color: var(--sidebar-grey);"
       id="mySidebar">
       <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
         style="font-size: 1.5rem; margin-bottom: 2rem; left: -9px; top: -5px;" id="closeButton"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" class="ionicon" viewBox="0 0 512 512">
@@ -1622,19 +1548,55 @@ nav a {
     <p>
         When we know what we are demanding in an unhelpful belief, we can then work out what we are expecting will
         happen if the demand is not met. This is the <i>evaluation</i>.</p>
-    <p>
-        We want to keep asking ourselves what is the result of an unmet demand until we reach a point where we express a
-        global
-        negative sentiment about one or more of the following:
+
+    <p>Evaluations are made up of at least one type of extreme belief out of the three below:</p>
+
+    <p> <i>Awfulizing</i> means to view something that is bad or unfortunate and to only see it as completely, 100% bad
+        or unfortunate, without considering the possibility of any positive aspects. </p>
+    
+  <div class="box">
+    
+    <p><small>example</small>:<br />
+        <i>It would be terrible if she didn't like me.</i><br />
+        <i>If I lost my job it would be simply awful.</i><br />
+        
+  </div>
+
+
+    <p> <i>Discomfort intolerance</i> occurs when a person states that cannot tolerate something uncomfortable or that
+        they
+        cannot be happy with the presence of the intolerable thing.</p>
+    <p></p>
+    <p>This can be unhelpful because it can become a self-fulfilling prophecy: by believing you cannot stand something,
+        you will likely develop unhelpful feelings (anxiety or anger are common) about yourself or others in a
+        situation. </p>
+    
+  <div class="box">
+    
+    <p><small>example</small>:<br />
+        <i>I can't stand not knowing what is going to happen.</i><br />
+        <i>I can't tolerate his behaviour.</i><br />
     </p>
-    <ul>
-        <li>
-            Self</li>
-        <li>
-            Others</li>
-        <li>
-            The situation, the world, the future, or life itself</li>
-    </ul>
+    
+  </div>
+
+
+    <p> <i>Global negative evaluation</i> occurs when we make a single negative evaluation of themselves, others or the
+        world, and use it to judge the whole person or situation as completely defective.</p>
+    
+  <div class="box">
+    
+    <p><small>example</small>:<br />
+        <i>I am such a failure!</i><br />
+        <i>Her son is a loser.</i><br />
+        <i>My life sucks.</i>
+    </p>
+    
+  </div>
+
+    <p>
+        We want to keep asking ourselves what is the result of an unmet demand until we come across one of these extreme
+        beliefs.</p>
     <p> Identifying the evaluation might require asking the question repeatedly, challenging each belief that pops up,
         to arrive at the most feared scenario. </p>
 
@@ -2691,16 +2653,6 @@ envy
         The ABC model presented here is based on Rational Emotive Behaviour Therapy (REBT), which is a type of Cognitive
         Behavioural Therapy (CBT).
     </p>
-    <p>
-        See 
-  <a href="#references" onclick="w3_close()">references</a>
-.
-    </p>
-    <hr>
-    <p>
-</section>
-
-<section id="references" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h3>
         <p>
             References</p>
