@@ -112,10 +112,18 @@
     color: var(--sidebar-text-grey);
   }
 
+  nav hr {
+    max-width: 35ch;
+}
 
-  .sidebar_link a {
-    /* color: var(--light); */
-  }
+nav a {
+  border-bottom: 0px solid;
+}
+
+
+  /* .sidebar_link a {
+    color: var(--light);
+  } */
 
   section:target {
     /* Show section */
@@ -152,8 +160,8 @@
     border-left: solid 1px var(--sidebar-grey);
     font-size: 0.9rem;
     position: absolute;
-    right: -160px;
-    width: 288px;
+    right: -125px;
+    width: 300px;
   }
 
   /* ------- General ------- */
@@ -469,7 +477,7 @@
 
   .w3-sidebar {
     height: 100%;
-    width: 325px;
+    width: 300px;
     background-color: #fff;
     position: fixed !important;
     z-index: 1;
@@ -744,22 +752,6 @@
     bottom: 0;
     transform: translate(-50%, 0%);
     -ms-transform: translate(-50%, 0%)
-  }
-
-  .w3-display-container:hover .w3-display-hover {
-    display: block
-  }
-
-  .w3-display-container:hover span.w3-display-hover {
-    display: inline-block
-  }
-
-  .w3-display-hover {
-    display: none
-  }
-
-  .w3-display-position {
-    position: absolute
   }
 
   .w3-container,
