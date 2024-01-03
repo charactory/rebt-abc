@@ -1,0 +1,155 @@
+<section id="step3" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
+    <h2>3. Identify consequences</h2>
+
+    <p>List out the thoughts, emotions and behaviours that occurred when you had this adversity. This is referred to as
+        the <i>consequences</i> in the ABC model.
+
+    <p>
+        To identify your unhelpful negative emotions, review this list and click on their names to learn more about
+        them. </p>
+
+    <!--
+    <table style="border: 1px solid var(--textcolor); background-color: var(--bgcolor); padding: 0.3em; display: inline-block; margin-bottom: 0.8rem;">
+    -->
+    <table class="emotion_table">
+
+        <tbody>
+            <tr>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p><small>Emotion</small></p>
+                </td>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p><small>Cause</small></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p>{{c.link('depression', "Depression")}}</p>
+                </td>
+                <td style="text-align: center;padding:0.3rem 0.3rem 0.3rem 0.3rem">
+                    <p>Loss or failure</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p>{{c.link('anxiety', "Anxiety")}}</p>
+                </td>
+                <td style="text-align: center;padding:0.3rem 0.3rem 0.3rem 0.3rem">
+                    <p>Threat in future to self or significant others</p>
+            </tr>
+
+            <tr>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p>{{c.link('anger', "Anger")}}</p>
+                </td>
+                <td style="text-align: center;padding:0.3rem 0.3rem 0.3rem 0.3rem">
+                    <p>Obstruction from goal, personal rule broken by others</p>
+            </tr>
+
+            <tr>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p>{{c.link('hurt', "Hurt")}}</p>
+                </td>
+                <td style="text-align: center;padding:0.3rem 0.3rem 0.3rem 0.3rem">
+                    <p>Undeserved poor treatment by others</p>
+            </tr>
+            <tr>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p>{{c.link('shame', "Shame")}}</p>
+                </td>
+                <td style="text-align: center;padding:0.3rem 0.3rem 0.3rem 0.3rem">
+                    <p>Seeing oneself as deficient compared to others</p>
+            </tr>
+
+            <tr>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p>{{c.link('guilt', "Guilt")}}</p>
+                </td>
+                <td style="text-align: center;padding:0.3rem 0.3rem 0.3rem 0.3rem">
+                    <p>Doing something perceived as morally wrong</p>
+            </tr>
+
+            <tr>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p>{{c.link('jealousy', "Jealousy")}}</p>
+                </td>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p>Perceived threat to relationship with significant other</p>
+            </tr>
+
+            <tr>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p>{{c.link('envy', "Envy")}}</p>
+                </td>
+                <td style="text-align: center;padding:0.3rem 3rem 0.3rem 0.3rem">
+                    <p>Someone enjoys having someone you do not have</p>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <p>
+        {#{{c.link('emotion_not_listed', "Q: My emotion isn't listed here. What do I do?")}}#}
+    </p>
+
+    <h3>
+        Identify secondary emotions
+    </h3>
+    <p>When we experience an unhelpful negative emotion, we might also have an emotional response to the initial
+        emotion. These are known as <i>secondary emotions</i>.</p>
+    <p></p>
+    <p>In practice, this means we can be depressed about getting angry, shameful about being depressed, anxious about
+        being jealous, and so on.</p>
+
+
+    <details closed>
+        <summary>see example</summary>
+        {% call c.box() %}
+        <p>
+            <span class="smallcap">Situation</span>: You are anxious
+        </p>
+        <p>
+            <span class="smallcap">Adversity</span>: <i>Anxiety means something bad will happen</i>
+        </p>
+        <p>
+            <span class="smallcap">Belief</span>: <i>I must not be anxious otherwise I couldn't stand it</i>
+        </p>
+        <p>
+            <span class="smallcap">Consequence</span>: Anxiety continues to worsen
+        </p>
+        {% endcall %}
+    </details>
+
+    <p></p>
+    <p>The initial, primary emotion becomes a new situation and corresponding adversity which activates another
+        unhelpful belief that leads to the unhelpful negative emotion.</p>
+    <p></p>
+    <p>Consider which emotion is the most problematic for you. Addressing the secondary emotion might be more helpful
+        if it liberates you to focus on the primary emotion more effectively.</p>
+
+    <h3>
+        <p>
+            Set a goal for the problem
+        </p>
+    </h3>
+    <p>
+        When you are sure what the situation is and how it impacted you, think about a goal of what you want to change.
+    </p>
+    <p>
+        If you are experiencing an adversity, you are likely to experience some form of negative emotion,
+        so setting a goal of having positive or no negative emotion would be unrealistic and unhelpful.
+    </p>
+    <p>
+        Behavioral goals are the most helpful — ie. what you would be doing differently if you were
+        coping more effectively with the problem.
+    </p>
+    <p>{#{{c.link('feel_better', "Q: I just want to feel better. Isn't that a valid goal?")}}</p>#}
+    <p></p>
+    <hr>
+    <p>
+        Go to: {{c.link('step4', "4. Identify unhelpful beliefs")}}
+    </p>
+</section>
