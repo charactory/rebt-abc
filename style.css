@@ -47,16 +47,17 @@
     --linkcolor: #675f4c;
     --sidebar-grey: var(--lightgrey);
     --sidebar-text-grey: var(--mediumgrey);
+    --light-dark-mode-icon-colour: #BABABA;
   }
 
-/* html[data-theme='dark'] {
-    --bgcolor: #171717;
+html[data-theme='dark'] {
+    --bgcolor: #1B1B1B;
     --textcolor: #D9D7D7;
     --linkcolor: #86817D;
-    --sidebar-grey: #1E1E1E;
+    --sidebar-grey: #222222;
     --sidebar-text-grey: #626262;
-
-  } */
+    --light-dark-mode-icon-colour: #424242;
+  }
 
   * {
     margin: 0;
@@ -627,6 +628,12 @@ nav a {
       display: none !important;
     }
 
+    #themeToggleSection {
+      display: block !important;
+      /* left: 250px !important;
+      background-color: var(--bgcolor); */
+    }
+
 
     #buttonSpaceFiller {
       display: block !important;
@@ -660,6 +667,12 @@ nav a {
 
     .w3-auto {
       max-width: 100%
+    }
+
+    #themeToggleSection {
+      display: none !important;
+      /* left: 250px !important;
+      background-color: var(--bgcolor); */
     }
   }
 

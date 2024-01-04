@@ -68,16 +68,17 @@
     --linkcolor: #675f4c;
     --sidebar-grey: var(--lightgrey);
     --sidebar-text-grey: var(--mediumgrey);
+    --light-dark-mode-icon-colour: #BABABA;
   }
 
-/* html[data-theme='dark'] {
-    --bgcolor: #171717;
+html[data-theme='dark'] {
+    --bgcolor: #1B1B1B;
     --textcolor: #D9D7D7;
     --linkcolor: #86817D;
-    --sidebar-grey: #1E1E1E;
+    --sidebar-grey: #222222;
     --sidebar-text-grey: #626262;
-
-  } */
+    --light-dark-mode-icon-colour: #424242;
+  }
 
   * {
     margin: 0;
@@ -648,6 +649,12 @@ nav a {
       display: none !important;
     }
 
+    #themeToggleSection {
+      display: block !important;
+      /* left: 250px !important;
+      background-color: var(--bgcolor); */
+    }
+
 
     #buttonSpaceFiller {
       display: block !important;
@@ -681,6 +688,12 @@ nav a {
 
     .w3-auto {
       max-width: 100%
+    }
+
+    #themeToggleSection {
+      display: none !important;
+      /* left: 250px !important;
+      background-color: var(--bgcolor); */
     }
   }
 
@@ -922,9 +935,17 @@ nav a {
 
     <div class="w3-sidebar w3-collapse shadow" style="background-color: var(--sidebar-grey);" id="mySidebar">
       <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_close()"
-        style="font-size: 1.5rem; margin-bottom: 2rem; left: -9px; top: -5px;" id="closeButton"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" class="ionicon" viewBox="0 0 512 512">
+        style="font-size: 1.5rem; margin-bottom: 2rem; left: -9px; top: -5px;" id="closeButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="70px" class="ionicon" viewBox="0 0 512 512">
 <path fill="none" stroke="var(--textcolor)" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/>
-</svg></button> <!--🌓-->
+</svg></button>
+
+      <!--🌓-->
+
+      <button class="w3-button w3-xlarge w3-hide-large"
+        style="font-size: 1.5rem; margin-bottom: 2rem; left: 205px; top: 3px;" onclick="switchLightOrDark()"
+        id="themeToggleSidebar"><svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="nightModeIconTitle" stroke="var(--light-dark-mode-icon-colour)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" color="var(--light-dark-mode-icon-colour)"> <title id="nightModeIconTitle">Night Mode</title> <path d="M12 19a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/> <path d="M15.899 12.899a4 4 0 0 1-4.797-4.797A4.002 4.002 0 0 0 12 16c1.9 0 3.49-1.325 3.899-3.101z"/> <path d="M12 5V3M12 21v-2"/> <path d="M5 12H2h3zM22 12h-3 3zM16.95 7.05L19.07 4.93 16.95 7.05zM4.929 19.071L7.05 16.95 4.93 19.07zM16.95 16.95l2.121 2.121-2.121-2.121zM4.929 4.929L7.05 7.05 4.93 4.93z"/> </svg></button>
+
       <div id="buttonSpaceFiller" style="height: 90px; width: 300px; display: none"></div>
 
       <nav class="sidebar_link">
@@ -1016,8 +1037,9 @@ nav a {
     </div>
 
     <button class="w3-button" onclick="w3_open()" id="openButton" style="font-size: 1.5rem;">☰</button>
-    <div class="w3-container">
-    </div>
+    <button class="w3-button w3-xlarge w3-hide-large"
+      style="font-size: 1.5rem; margin-bottom: 2rem; left: 205px; top: 3px;" onclick="switchLightOrDark()"
+      id="themeToggleSection"><svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="nightModeIconTitle" stroke="var(--light-dark-mode-icon-colour)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" color="var(--light-dark-mode-icon-colour)"> <title id="nightModeIconTitle">Night Mode</title> <path d="M12 19a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/> <path d="M15.899 12.899a4 4 0 0 1-4.797-4.797A4.002 4.002 0 0 0 12 16c1.9 0 3.49-1.325 3.899-3.101z"/> <path d="M12 5V3M12 21v-2"/> <path d="M5 12H2h3zM22 12h-3 3zM16.95 7.05L19.07 4.93 16.95 7.05zM4.929 19.071L7.05 16.95 4.93 19.07zM16.95 16.95l2.121 2.121-2.121-2.121zM4.929 4.929L7.05 7.05 4.93 4.93z"/> </svg></button>
   </header>
   <main>
 
@@ -1051,6 +1073,7 @@ nav a {
     <section id="5minutes" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
 
     <h2>The ABC model in 5 minutes</h2>
+    <p>The following steps are an outline of the method used in the ABC model to change our own thoughts.</p>
     <ol style="margin-left:0px;">
         <li>Think of a problem that is affecting you</li>
         <li>Think of a specific time the problem was an issue for you</li>
@@ -1067,7 +1090,7 @@ nav a {
             Decide which emotional response (primary or secondary) to address</li>
         <li>Set a goal for what you want to change about your response to the situation</li>
         <li>Define the demand by asking yourself what you were expecting with respect to the adversity<br />Keep asking
-            until you describe a demand by stating something “should” or “must” happen</li>
+            until you describe a demand by stating something <i>should</i> or <i>must</i> happen</li>
         <li>Define the evaluation by asking yourself what you thought would happen if your expectation is not met<br />
             Keep asking until you express a statement with at least one of the following extreme beliefs:<br />
             <ul>
@@ -1077,8 +1100,7 @@ nav a {
                 </li>
             </ul>
         </li>
-        <li>State your unhelpful belief in full: <i>when the adversity happened, I had the demand that something must
-                happen, and if it did not, I or others would suffer the negative outcome in the evaluation</i></li>
+        <li>State your unhelpful belief in full: <i>when the adversity happened, I had the demand that a condition must be met, and if it did not, I or others would suffer the negative outcome in the evaluation</i></li>
         <li>Dispute the demand and the evaluations by questioning how logical, realistic or practical they are</li>
         <li>Dispute the adversity by examining evidence for it</li>
         <li>Create a new effective belief that is flexible and non-extreme</li>
@@ -1095,8 +1117,7 @@ nav a {
     <p></p>
 </section>
 
-
-<section id="intro" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
+    <section id="intro" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h2>What is the ABC model?</h2>
     <p>The <i>ABC</i> in <i>ABC</i> model stands for <i>Adversity</i>, <i>Beliefs</i> and
         <i>Consequences</i>.
@@ -1106,7 +1127,7 @@ nav a {
     </p>
     <ul>
         <li>form an unhelpful negative emotion</li>
-        <li>engage in unhelpful behaviours 
+        <li>engage in unhelpful behaviours
             <!-- <aside><i>Unhelpfulness</i> here is defined as anything that is not in your
                 best interests, harms you or your
                 relationships with others.</aside> -->
@@ -1129,7 +1150,7 @@ nav a {
 </p>
 </section>
 
-<section id="step1" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
+    <section id="step1" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h2>1. Define the problem</h2>
 
     <p>The first step is to decide what the problem is.</p>
@@ -1231,7 +1252,7 @@ nav a {
     </p>
 </section>
 
-<section id="step2" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
+    <section id="step2" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h2>2. Define the adversity</h2>
 
     <p></p>
@@ -1242,31 +1263,32 @@ nav a {
     <p></p>
     <p>The adversity is usually a subjective opinion, but it can also be an objective fact about what happened.</p>
     <p></p>
-        
+    
   <div class="box">
     
-        <p><small>example:</small><br/>
-        <small>Situation</small>: <i>I lost my job.</i><br/>
-        <small>Adversity</small>: <i>I don’t know how I can pay next fortnight’s bills</i></p>
-        <p></p>
-        
+    <p><small>example:</small><br />
+        <small>Situation</small>: <i>I lost my job.</i><br />
+        <small>Adversity</small>: <i>I don’t know how I can pay next fortnight’s bills</i>
+    </p>
+    <p></p>
+    
   </div>
 
 
-        <p>There are usually many possible adversities that can be generated from a situation. It is possible to have
-            multiple unhelpful
-            negative emotions about a single situation.</p>
-        </p>
-        <p></p>
+    <p>There are usually many possible adversities that can be generated from a situation. It is possible to have
+        multiple unhelpful
+        negative emotions about a single situation.</p>
+    </p>
+    <p></p>
 
-        
+    
   <div class="box">
     
-        <p><i>I didn’t try hard enough at work to keep my job</i></p>
-        <p><i>I lost the job because my boss doesn’t like me</i></p>
-        <p><i>My wife is going to be disappointed in me</i></p>
-        <p><i>I won't be able to sleep because of this</i></p>
-        
+    <p><i>I didn’t try hard enough at work to keep my job</i></p>
+    <p><i>I lost the job because my boss doesn’t like me</i></p>
+    <p><i>My wife is going to be disappointed in me</i></p>
+    <p><i>I won't be able to sleep because of this</i></p>
+    
   </div>
 
     <p></p>
@@ -1285,7 +1307,8 @@ nav a {
 
     </p>
 </section>
-<section id="step3" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
+
+    <section id="step3" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h2>3. Identify consequences</h2>
 
     <p>List out the thoughts, emotions and behaviours that occurred when you had this adversity. This is referred to as
@@ -1463,6 +1486,7 @@ nav a {
     </p>
 </section>
 
+    
 <section id="step4" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h2>4. Identify unhelpful beliefs</h2>
     <p>
@@ -1581,7 +1605,8 @@ nav a {
   </div>
 
 
-    <p> <i>Discomfort intolerance</i> occurs when a person states that they cannot tolerate something uncomfortable or that
+    <p> <i>Discomfort intolerance</i> occurs when a person states that they cannot tolerate something uncomfortable or
+        that
         they cannot be happy with the presence of the intolerable thing.</p>
     <p></p>
     <p>This can be unhelpful because it can become a self-fulfilling prophecy: by believing you cannot stand something,
@@ -1598,7 +1623,7 @@ nav a {
   </div>
 
 
-    <p> <i>Global negative evaluation</i> is relying on a single negative evaluation of ourselves, others or the
+    <p> <i>Global negative rating</i> is relying on a single negative evaluation of ourselves, others or the
         world, and to judge the whole person or situation as completely defective.</p>
     
   <div class="box">
@@ -1668,8 +1693,7 @@ nav a {
     </p>
 
 </section>
-
-<section id="step5" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
+    <section id="step5" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h2>
         5. Dispute unhelpful beliefs
     </h2>
@@ -1846,7 +1870,8 @@ nav a {
 
 </section>
 
-<section id="step6" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
+
+    <section id="step6" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <h2>
         6. Create helpful new beliefs
     </h2>
@@ -1962,12 +1987,13 @@ nav a {
 
 
 </section>
-
-<section id="step7" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
+    <section id="step7" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
     <hr>
     <p>
     </p>
 </section>
+
+
     
     <section id="emotions" class="w3-main" onclick="w3_close()" ontouchstart="w3_close()" onscroll="w3_close()">
   <h2>Emotions</h2>
@@ -2723,17 +2749,11 @@ nav a {
       };
     }
 
-
-    var toggle = document.getElementById("theme-toggle");
-
-    var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    if (storedTheme)
-      document.documentElement.setAttribute('data-theme', storedTheme)
-
-
-    toggle.onclick = function () {
+    function switchLightOrDark() {
+      console.log("boo");
       var currentTheme = document.documentElement.getAttribute("data-theme");
       var targetTheme = "light";
+      console.log(currentTheme);
 
       if (currentTheme === "light") {
         targetTheme = "dark";
@@ -2742,6 +2762,13 @@ nav a {
       document.documentElement.setAttribute('data-theme', targetTheme)
       localStorage.setItem('theme', targetTheme);
     };
+
+    var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    if (storedTheme)
+      document.documentElement.setAttribute('data-theme', storedTheme)
+
+
+
 
 
     // function hide_home(page) {
