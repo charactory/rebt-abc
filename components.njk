@@ -6,6 +6,13 @@
     {{ caller() }}
   </div>
 {% endmacro %}
+
+{% macro s_box() %}
+  <div class="box shade">
+    {{ caller() }}
+</div>
+{% endmacro %}
+
 {% macro question_box() %}
   <div style="border: 1px solid var(--textcolor); background-color: var(--c-pink); padding: 0.3em; display: inline-block;
       margin-bottom: 0.2rem;">

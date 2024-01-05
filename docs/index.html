@@ -40,8 +40,6 @@
     font-size: 14px;
     --light: #F0EEED;
     --light-for-dark-mode: #D9D7D7;
-    --lightgrey: #D7D7D7;
-    --mediumgrey: #676767;
     --mediumbluegrey: #5C626B;
     --darkgrey: #272727;
     --dark: #101010;
@@ -53,12 +51,6 @@
     --link-ochre-day: #675f4c;
     --link-ochre-night: #898270;
 
-    --bgcolor: #F0EEED;
-    --textcolor: #101010;
-    --linkcolor: #675f4c;
-    --sidebar-grey: var(--lightgrey);
-    --sidebar-text-grey: var(--mediumgrey);
-
   }
 
 
@@ -66,18 +58,20 @@
     --bgcolor: #F0EEED;
     --textcolor: #101010;
     --linkcolor: #675f4c;
-    --sidebar-grey: var(--lightgrey);
-    --sidebar-text-grey: var(--mediumgrey);
+    --sidebar-grey: #D7D7D7;
+    --sidebar-text-grey: #676767;
     --light-dark-mode-icon-colour: #BABABA;
+    --box-shade: #e7e5df;
   }
 
 html[data-theme='dark'] {
-    --bgcolor: #1B1B1B;
+    --bgcolor: #1E1E1E;
     --textcolor: #D9D7D7;
     --linkcolor: #86817D;
-    --sidebar-grey: #222222;
+    --sidebar-grey: #262626;
     --sidebar-text-grey: #626262;
-    --light-dark-mode-icon-colour: #424242;
+    --light-dark-mode-icon-colour: #494949;
+    --box-shade: #252321;
   }
 
   * {
@@ -315,13 +309,19 @@ nav a {
 
   .box {
     /* border: 1px solid var(--textcolor);  */
-    padding: 0.9em; 
+    padding: 0.6rem 0.9rem 0rem 0.9rem; 
     display: inline-block; 
     max-width: 80ch;
+    margin-bottom:0.9rem;
   }
 
   .box h3 {
     font-size: 1.35rem;
+  }
+
+  .shade {
+    background-color: var(--box-shade);
+    border-radius: 5px;
   }
 
 
@@ -1184,23 +1184,23 @@ nav a {
     <details closed>
         <summary>see example</summary>
         
-  <div class="box">
+  <div class="box shade">
     
         <p><small>Problem</small>: <i>I'm not getting along with my partner</i></p>
         <p><small>Situation #1</small>: <i>They criticise me all the time</i></p>
         
-  </div>
+</div>
 
 
         <p>This situation is too unclear. Trying to practise ABC with this will quickly expand to many issues which can
             become confusing.</p>
 
         
-  <div class="box">
+  <div class="box shade">
     
         <p><small>Situation #2</small>: <i>They criticised me last Tuesday when I tried to help with the dishes</i></p>
         
-  </div>
+</div>
 
         <p>This is much better. The unhelpful thoughts are only about that specific moment.</p>
     </details>
@@ -1264,7 +1264,7 @@ nav a {
     <p>The adversity is usually a subjective opinion, but it can also be an objective fact about what happened.</p>
     <p></p>
     
-  <div class="box">
+  <div class="box shade">
     
     <p><small>example:</small><br />
         <small>Situation</small>: <i>I lost my job.</i><br />
@@ -1272,7 +1272,7 @@ nav a {
     </p>
     <p></p>
     
-  </div>
+</div>
 
 
     <p>There are usually many possible adversities that can be generated from a situation. It is possible to have
@@ -1431,11 +1431,10 @@ nav a {
         being jealous, and so on.</p>
 
 
-    <details closed>
-        <summary>see example</summary>
         
-  <div class="box">
+  <div class="box shade">
     
+        <p><span class="smallcap">example:</span></p>
         <p>
             <span class="smallcap">Situation</span>: You are anxious
         </p>
@@ -1449,9 +1448,8 @@ nav a {
             <span class="smallcap">Consequence</span>: Anxiety continues to worsen
         </p>
         
-  </div>
+</div>
 
-    </details>
 
     <p></p>
     <p>The initial, primary emotion becomes a new situation and corresponding adversity which activates another
@@ -1496,7 +1494,7 @@ nav a {
     <p>Rigid beliefs, or demands, occur when we insist our expectations be met regardless of reality.</p>
 
     
-  <div class="box">
+  <div class="box shade">
     
     <p><small>example</small>:<br />
         <i>I must always succeed.</i><br />
@@ -1504,7 +1502,7 @@ nav a {
         <i>The world should be predictable.</i>
     </p>
     
-  </div>
+</div>
 
 
 
@@ -1557,14 +1555,14 @@ nav a {
         <summary>see example</summary>
 
         
-  <div class="box">
+  <div class="box shade">
     
         <p><small>Situation</small>: You get asked a question by your manager that you do not know the answer for<br />
             <small>Adversity</small>: <i>My manager will think I am incompetent because I don't know</i><br />
             <small>Demand</small>: <i>Other people must think I am competent at my job</i>
         </p>
         
-  </div>
+</div>
 
     </details>
     <!-- <p>You might give another adversity as an answer to that. </p> -->
@@ -1596,13 +1594,13 @@ nav a {
     <p> <i>Awfulizing</i> means to view something that is bad or unfortunate and to only see it as completely, 100% bad
         or unfortunate, without considering the possibility of any positive aspects. </p>
     
-  <div class="box">
+  <div class="box shade">
     
     <p><small>example</small>:<br />
         <i>It would be terrible if she didn't like me.</i><br />
         <i>If I lost my job it would be simply awful.</i><br />
         
-  </div>
+</div>
 
 
     <p> <i>Discomfort intolerance</i> occurs when a person states that they cannot tolerate something uncomfortable or
@@ -1613,20 +1611,20 @@ nav a {
         you will likely develop unhelpful feelings (anxiety or anger are common) about yourself or others in a
         situation. </p>
     
-  <div class="box">
+  <div class="box shade">
     
     <p><small>example</small>:<br />
         <i>I can't stand not knowing what is going to happen.</i><br />
         <i>I can't tolerate his behaviour.</i><br />
     </p>
     
-  </div>
+</div>
 
 
     <p> <i>Global negative rating</i> is relying on a single negative evaluation of ourselves, others or the
         world, and to judge the whole person or situation as completely defective.</p>
     
-  <div class="box">
+  <div class="box shade">
     
     <p><small>example</small>:<br />
         <i>I am such a failure!</i><br />
@@ -1634,7 +1632,7 @@ nav a {
         <i>My life sucks.</i>
     </p>
     
-  </div>
+</div>
 
     <p>
         We want to keep asking ourselves what is the result of an unmet demand until we come across one of these extreme
@@ -1645,7 +1643,7 @@ nav a {
     <details closed>
         <summary>see example</summary>
         
-  <div class="box">
+  <div class="box shade">
     
         <p><small>Situation</small>: I forgot to pay a bill</p>
         <p>
@@ -1675,7 +1673,7 @@ nav a {
         </p>
 
         
-  </div>
+</div>
 
     </details>
 
@@ -1720,7 +1718,7 @@ nav a {
     <details closed>
         <summary>see examples</summary>
         
-  <div class="box">
+  <div class="box shade">
     
         <p><small>Belief</small>: <i>I must be as successful as everyone else</i><br />
             <small>Disputation</small>: What is the evidence that I have to be as successful at everyone else?
@@ -1735,7 +1733,7 @@ nav a {
         </p>
 
         
-  </div>
+</div>
 
     </details>
 
@@ -1755,7 +1753,7 @@ nav a {
         <summary>see examples</summary>
 
         
-  <div class="box">
+  <div class="box shade">
     
         <p><small>Belief</small>: <i>My partner must never let me down.</i><br />
             <small>Disputation</small>: It is understandable why I don't want to be let down by my partner, but does
@@ -1768,7 +1766,7 @@ nav a {
             <small>Disputation</small>: How is it possible to know I will enjoy an experience before I try it?
         </p>
         
-  </div>
+</div>
 
     </details>
 
@@ -1785,7 +1783,7 @@ nav a {
         <summary>see examples</summary>
 
         
-  <div class="box">
+  <div class="box shade">
     
         <p><small>Belief</small>: <i>It's so awful that my friends don't call.</i><br />
             <small>Disputation</small>: How does this belief help me with connecting me with my friends? Does it lead me
@@ -1798,7 +1796,7 @@ nav a {
             <small>Disputation</small>: Is calling myself a failure helping me to get a job?
         </p>
         
-  </div>
+</div>
 
     </details>
 
@@ -1848,7 +1846,7 @@ nav a {
         <summary>see example</summary>
 
         
-  <div class="box">
+  <div class="box shade">
     
         <p><small>Situation</small>: <i>A co-worker frowned at me as I walked past him</i><br />
             <small>Adversity</small>: <i>They don't like me</i><br />
@@ -1857,7 +1855,7 @@ nav a {
             that has nothing to do with me?
         </p>
         
-  </div>
+</div>
 
     </details>
 
@@ -1896,12 +1894,12 @@ nav a {
     <p>If this was put into a statement it would sound like:</p>
 
     
-  <div class="box">
+  <div class="box shade">
     
     <p><i>Although I would like really like my son to do well at school, I can accept that he might not.</i></p>
     <p><i>I would like the world to be fair, but I can acknowledge that it isn't the case.</i></p>
     
-  </div>
+</div>
 
 
     <p>It is easy to slip from a strongly held preference to a demand, so be careful about the distinction between the
@@ -1958,7 +1956,7 @@ nav a {
     <p>Here is a template of a helpful belief to aid with constructing your own:</p>
 
     
-  <div class="box">
+  <div class="box shade">
     
     <p>I would like myself/others/the situation to meet a condition, and if not:</p>
     <ul>
@@ -1976,7 +1974,7 @@ nav a {
     <p>I would do whatever I can to make this condition occur, but even if I could not do anything, or if the condition
         was not met, I would still be able to accept it</p>
     
-  </div>
+</div>
 
 
     <p>When you have settled on your new belief, write it down somewhere and look at it regularly to remind yourself
