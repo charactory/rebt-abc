@@ -343,6 +343,10 @@ nav a {
     font-size: 1em;
   }
 
+  .next_link {
+    text-align: right;
+  }
+
   span.newthought {
     /*font-variant: small-caps;*/
     font-family: "Charter Small Caps", Charter, "Charter BT", 'Bitstream Charter', 'Sitka Text', Cambria, serif;

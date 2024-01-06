@@ -28,7 +28,14 @@
     <p></p>
 
     <p>When put together, an unhelpful belief takes the following form:</p>
-    {% include "unhelpfulbelief.html" %}
+    {% call c.s_box() %}
+    <p><i>I/others/the situation </i><small>should/must</small><i> meet a condition, or else:</i></p>
+    <ul>
+        <li><i>it would be </i><small>awful</small></li>
+        <li><i>it would be </i><small>intolerable</small></li>
+        <li><i>it would mean I am/others are/the situation is </i><small>completely bad/a failure/useless</small>.</li>
+    </ul>
+    {% endcall %}
 
     <h3>Identifying the demand</h3>
 
@@ -157,7 +164,7 @@
     </p> -->
     <p></p>
     <hr>
-    <p>
+    <p class="next_link">
         Go to: {{c.link('step5', "5. Dispute unhelpful beliefs")}}
     </p>
 
