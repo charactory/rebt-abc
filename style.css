@@ -50,7 +50,7 @@ html[data-theme='dark'] {
     --sidebar-grey: #292929;
     --sidebar-text-grey: #626262;
     --light-dark-mode-icon-colour: #494949;
-    --box-shade: #302e2b;
+    --box-shade: #353330;
   }
 
   * {
@@ -311,6 +311,10 @@ nav a {
 
   li {
     margin-bottom: .2em;
+  }
+
+  .fivemin li {
+    margin-bottom: .7rem;
   }
 
   ul,
